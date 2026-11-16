@@ -3,252 +3,243 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>FBS Forex Trading Floor 3D</title>
+<title>Agent HQ 3D — Forex & Airdrop Hunter</title>
 <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,sans-serif}
 body{background:#090d16;color:#f1f5f9;height:100vh;display:flex;flex-direction:column;overflow:hidden}
-.top{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;background:#111827;border-bottom:1px solid #1e293b;z-index:20}
-.brand{font-weight:800;font-size:14px;display:flex;align-items:center;gap:6px}
-.brand span{background:#059669;padding:2px 7px;border-radius:6px;font-size:10px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:#111827;border-bottom:1px solid #1e293b;z-index:20}
+.brand{font-weight:800;font-size:13.5px;display:flex;align-items:center;gap:6px}
+.brand span{background:#4f46e5;padding:2px 7px;border-radius:6px;font-size:10px}
 .top-right{display:flex;align-items:center;gap:6px}
-.saldo-pill{background:#1e293b;border:1px solid #334155;padding:5px 10px;border-radius:9px;font-size:12px;font-weight:800;color:#4ade80}
-.btn-ref{background:#3b82f6;color:#fff;border:none;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer}
+.saldo-pill{background:#1e293b;border:1px solid #334155;padding:4px 9px;border-radius:8px;font-size:11.5px;font-weight:800;color:#4ade80}
+.btn-ref{background:#2563eb;color:#fff;border:none;padding:5px 9px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer}
 
 #stage{position:relative;flex:1;overflow:hidden;background:radial-gradient(circle at center,#1e293b 0%,#090d16 100%)}
 #c3d{width:100%;height:100%;touch-action:none}
 #labels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 
-.cam-pills{position:absolute;top:10px;left:10px;right:10px;display:flex;gap:6px;overflow-x:auto;z-index:10}
+.cam-pills{position:absolute;top:9px;left:10px;right:10px;display:flex;gap:6px;overflow-x:auto;z-index:10}
 .cam-pills::-webkit-scrollbar{display:none}
-.pill{background:rgba(15,23,42,.88);border:1px solid #334155;color:#e2e8f0;padding:5px 11px;border-radius:99px;font-size:11px;font-weight:700;white-space:nowrap;cursor:pointer;backdrop-filter:blur(4px)}
-.pill.active{background:#2563eb;border-color:#60a5fa;color:#fff}
+.pill{background:rgba(15,23,42,.88);border:1px solid #334155;color:#e2e8f0;padding:5px 10px;border-radius:99px;font-size:11px;font-weight:700;white-space:nowrap;cursor:pointer}
+.pill.active{background:#4f46e5;border-color:#818cf8;color:#fff}
 
-.atag{position:absolute;transform:translate(-50%,-100%);background:rgba(15,23,42,.92);border:1px solid rgba(255,255,255,.18);padding:2px 7px;border-radius:99px;font-size:9.5px;font-weight:700;display:flex;align-items:center;gap:4px;white-space:nowrap}
+.atag{position:absolute;transform:translate(-50%,-100%);background:rgba(15,23,42,.92);border:1px solid rgba(255,255,255,.18);padding:2px 6px;border-radius:99px;font-size:9px;font-weight:700;display:flex;align-items:center;gap:4px;white-space:nowrap}
 .dot{width:6px;height:6px;border-radius:50%;display:inline-block}
-.bub{position:absolute;transform:translate(-50%,-215%);background:#ffffff;color:#0f172a;padding:2px 8px;border-radius:8px;font-size:9.5px;font-weight:800;white-space:nowrap;box-shadow:0 3px 8px rgba(0,0,0,.4)}
+.bub{position:absolute;transform:translate(-50%,-215%);background:#ffffff;color:#0f172a;padding:2px 7px;border-radius:7px;font-size:9px;font-weight:800;white-space:nowrap;box-shadow:0 3px 8px rgba(0,0,0,.4)}
 
-/* PANEL STATUS TRADING DI BAWAH */
+/* PANEL BAWAH DENGAN SWITCHER DIVISI */
 .bottom-panel{
-  background:#111827;border-top:1px solid #1e293b;padding:10px 12px;z-index:20;
-  display:flex;flex-direction:column;gap:6px;max-height:34vh;overflow-y:auto;
+  background:#111827;border-top:1px solid #1e293b;padding:9px 12px;z-index:20;
+  display:flex;flex-direction:column;gap:7px;height:38vh;overflow-y:auto;
 }
+.div-tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.dtab{background:#1e293b;color:#94a3b8;border:1px solid #334155;padding:6px;border-radius:8px;font-size:11.5px;font-weight:800;cursor:pointer}
+.dtab.active{background:#4f46e5;color:#fff;border-color:#818cf8}
+
 .row-stat{display:flex;justify-content:space-between;align-items:center;font-size:11.5px}
-.sig-badge{padding:2px 8px;border-radius:6px;font-weight:800;font-size:11px}
+.sig-badge{padding:2px 8px;border-radius:6px;font-weight:800;font-size:10.5px}
 .sig-BUY{background:rgba(34,197,94,.2);color:#4ade80;border:1px solid #22c55e}
 .sig-SELL{background:rgba(239,68,68,.2);color:#f87171;border:1px solid #ef4444}
 .sig-HOLD{background:rgba(234,179,8,.2);color:#facc15;border:1px solid #eab308}
-.analisa-box{background:#0b0f19;border:1px solid #1e293b;border-radius:8px;padding:7px 9px;font-size:11.5px;color:#cbd5e1;line-height:1.4}
-.hist-list{font-size:10.5px;color:#94a3b8;display:flex;gap:8px;overflow-x:auto;padding-top:2px}
-.hist-item{background:#1e293b;padding:3px 8px;border-radius:6px;white-space:nowrap}
+.box-info{background:#0b0f19;border:1px solid #1e293b;border-radius:8px;padding:8px;font-size:11.5px;color:#cbd5e1;line-height:1.4}
+
+.ad-card{background:#0b0f19;border:1px solid #1e293b;border-radius:9px;padding:8px;margin-top:6px}
+.ad-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.ad-title{font-weight:800;font-size:12.5px;color:#34d399}
+.ad-tag{background:rgba(16,185,129,.18);color:#6ee7b7;font-size:10px;font-weight:700;padding:2px 6px;border-radius:5px}
+.ad-meta{font-size:10.5px;color:#facc15;margin-bottom:3px}
+.ad-desc{font-size:11px;color:#cbd5e1;line-height:1.35}
 </style>
 </head>
 <body>
 
 <div class="top">
-  <div class="brand">📈 FBS Trading HQ <span>MT5 AI</span></div>
+  <div class="brand">🏢 Agent HQ <span>8 AI</span></div>
   <div class="top-right">
-    <div class="saldo-pill" id="ui-saldo">300.0 USC</div>
-    <button class="btn-ref" onclick="muatPorto()">🔄 Sync</button>
+    <div class="saldo-pill" id="ui-saldo">300.00 USC</div>
+    <button class="btn-ref" onclick="syncSemua()">🔄 Sync</button>
   </div>
 </div>
 
 <div id="stage">
   <div class="cam-pills">
-    <button class="pill active" onclick="setCam(0,2.3,0,22,this)">Semua Gedung</button>
-    <button class="pill" onclick="setCam(-1.5,0.9,1.2,11,this)">Meja Trading</button>
-    <button class="pill" onclick="setCam(-2.2,4.0,-1.2,11,this)">Ruang Berita TV</button>
-    <button class="pill" onclick="setCam(3.2,4.0,-1.0,11,this)">Pantry & Kopi</button>
+    <button class="pill active" onclick="setCam(0,3.2,0,26,this)">Semua Gedung</button>
+    <button class="pill" onclick="setCam(-1.5,0.9,0.5,11,this)">Lt.1 Forex</button>
+    <button class="pill" onclick="setCam(-1.5,7.1,0.5,11,this)">Lt.3 Airdrop</button>
+    <button class="pill" onclick="setCam(-2.2,4.0,-1.0,11,this)">Lt.2 TV Berita</button>
+    <button class="pill" onclick="setCam(3.2,4.0,-0.8,11,this)">Lt.2 Pantry</button>
   </div>
   <div id="c3d"></div>
   <div id="labels"></div>
 </div>
 
 <div class="bottom-panel">
-  <div class="row-stat">
-    <div>Pair: <b>EURUSD</b> • Update: <span id="ui-time" style="color:#94a3b8">-</span></div>
-    <span class="sig-badge sig-HOLD" id="ui-sig">STANDBY</span>
+  <div class="div-tabs">
+    <button class="dtab active" id="btn-fx" onclick="pilihDivisi('fx')">📈 Divisi Forex MT5</button>
+    <button class="dtab" id="btn-ad" onclick="pilihDivisi('ad')">🪂 Pemburu Airdrop</button>
   </div>
-  <div class="analisa-box" id="ui-analisa">Menunggu data dari karyawan AI...</div>
-  <div class="hist-list" id="ui-hist"></div>
+
+  <!-- KONTEN DIVISI FOREX -->
+  <div id="panel-fx">
+    <div class="row-stat" style="margin-bottom:6px">
+      <div>Pair: <b>EURUSD</b> • <span id="ui-time" style="color:#94a3b8">-</span></div>
+      <span class="sig-badge sig-HOLD" id="ui-sig">STANDBY</span>
+    </div>
+    <div class="box-info" id="ui-analisa">Memuat analisa trading...</div>
+  </div>
+
+  <!-- KONTEN DIVISI AIRDROP -->
+  <div id="panel-ad" style="display:none">
+    <div class="row-stat">
+      <div style="font-weight:700;color:#34d399">Radar Airdrop & Testnet</div>
+      <div id="ad-time" style="font-size:10.5px;color:#94a3b8">-</div>
+    </div>
+    <div id="ad-summary" style="font-size:11px;color:#94a3b8;margin-top:2px">Menunggu laporan pemburu airdrop...</div>
+    <div id="ad-list"></div>
+  </div>
 </div>
 
 <script>
-// ================= DATA TRADING LIVE =================
-let tradingData = {
-  saldo_usc: 300.0,
-  update_terakhir: "Live Demo",
-  analisa_terakhir: "HOLD (Harga 1.08450) — Memantau penutupan candle H1 EURUSD",
-  posisi: null,
-  riwayat: []
-};
-let currentSignal = "HOLD";
+function pilihDivisi(d) {
+  document.getElementById("panel-fx").style.display = d === "fx" ? "block" : "none";
+  document.getElementById("panel-ad").style.display = d === "ad" ? "block" : "none";
+  document.getElementById("btn-fx").classList.toggle("active", d === "fx");
+  document.getElementById("btn-ad").classList.toggle("active", d === "ad");
+}
 
-async function muatPorto() {
+let currentSignal = "HOLD";
+let topAirdropName = "Proyek Baru";
+
+async function syncSemua() {
+  // 1. Load Data Forex
   try {
-    const res = await fetch("porto_cent.json?t=" + Date.now());
-    if (res.ok) {
-      tradingData = await res.json();
+    const r1 = await fetch("porto_cent.json?t=" + Date.now());
+    if (r1.ok) {
+      const td = await r1.json();
+      document.getElementById("ui-saldo").textContent = Number(td.saldo_usc || 300).toFixed(2) + " USC";
+      document.getElementById("ui-time").textContent = td.update_terakhir || "-";
+      document.getElementById("ui-analisa").textContent = td.analisa_terakhir || "-";
+      const txt = (td.analisa_terakhir || "").toUpperCase();
+      if (td.posisi) currentSignal = td.posisi.tipe;
+      else if (txt.startsWith("BUY")) currentSignal = "BUY";
+      else if (txt.startsWith("SELL")) currentSignal = "SELL";
+      else currentSignal = "HOLD";
+
+      const badge = document.getElementById("ui-sig");
+      badge.textContent = td.posisi ? `AKTIF ${td.posisi.tipe}` : `SINYAL ${currentSignal}`;
+      badge.className = "sig-badge sig-" + currentSignal;
     }
   } catch (e) {}
 
-  document.getElementById("ui-saldo").textContent = Number(tradingData.saldo_usc || 300).toFixed(2) + " USC";
-  document.getElementById("ui-time").textContent = tradingData.update_terakhir || "-";
-  document.getElementById("ui-analisa").textContent = tradingData.analisa_terakhir || "-";
-
-  const txt = (tradingData.analisa_terakhir || "").toUpperCase();
-  if (tradingData.posisi) currentSignal = tradingData.posisi.tipe;
-  else if (txt.startsWith("BUY")) currentSignal = "BUY";
-  else if (txt.startsWith("SELL")) currentSignal = "SELL";
-  else currentSignal = "HOLD";
-
-  const badge = document.getElementById("ui-sig");
-  badge.textContent = tradingData.posisi ? `AKTIF ${tradingData.posisi.tipe}` : `SINYAL ${currentSignal}`;
-  badge.className = "sig-badge sig-" + currentSignal;
-
-  const histEl = document.getElementById("ui-hist");
-  if (tradingData.riwayat && tradingData.riwayat.length) {
-    histEl.innerHTML = tradingData.riwayat.slice(0, 6).map(r =>
-      `<div class="hist-item">${r.waktu}: <b>${r.status}</b> (${r.saldo} USC)</div>`
-    ).join("");
-  } else {
-    histEl.innerHTML = `<div class="hist-item">Lot: 0.01 Cent • SL: 20 Pips • TP: 40 Pips</div>`;
-  }
+  // 2. Load Data Airdrop
+  try {
+    const r2 = await fetch("airdrop_list.json?t=" + Date.now());
+    if (r2.ok) {
+      const ad = await r2.json();
+      document.getElementById("ad-time").textContent = ad.update_terakhir || "-";
+      document.getElementById("ad-summary").textContent = ad.ringkasan || "";
+      const items = ad.items || [];
+      if (items.length) topAirdropName = items[0].nama;
+      document.getElementById("ad-list").innerHTML = items.map(it => `
+        <div class="ad-card">
+          <div class="ad-top">
+            <span class="ad-title">🪂 ${it.nama}</span>
+            <span class="ad-tag">${it.tipe}</span>
+          </div>
+          <div class="ad-meta">Potensi: ${it.potensi} • Modal: ${it.modal}</div>
+          <div class="ad-desc">${it.langkah}</div>
+        </div>
+      `).join("");
+    } else {
+      document.getElementById("ad-summary").textContent = "Jalankan Run workflow di GitHub Actions dulu biar tim airdrop mulai nyari proyek.";
+    }
+  } catch (e) {}
 }
-muatPorto();
-setInterval(muatPorto, 30000);
+syncSemua();
+setInterval(syncSemua, 30000);
 
-// ================= TEKSTUR DINAMIS LAPTOP & TV BERITA =================
+// ================= TEKSTUR LAPTOP FOREX, RADAR AIRDROP & TV =================
 const laptopCanvas = document.createElement("canvas");
 laptopCanvas.width = 256; laptopCanvas.height = 160;
 const lCtx = laptopCanvas.getContext("2d");
 const laptopTex = new THREE.CanvasTexture(laptopCanvas);
 
-const candles = Array.from({length: 18}, (_, i) => ({
-  o: 70 + Math.sin(i * 0.6) * 18,
-  c: 70 + Math.cos(i * 0.6) * 18,
-  h: 45, l: 115
-}));
+const adCanvas = document.createElement("canvas");
+adCanvas.width = 256; adCanvas.height = 160;
+const aCtx = adCanvas.getContext("2d");
+const adTex = new THREE.CanvasTexture(adCanvas);
 
-function updateLaptopTexture() {
-  // Geser candle baru
+const candles = Array.from({length: 18}, (_, i) => ({ o: 75, c: 75 + Math.sin(i)*12, h: 50, l: 110 }));
+
+function updateScreens() {
   const last = candles[candles.length - 1];
   const nextC = Math.max(38, Math.min(115, last.c + (Math.random() * 18 - 9)));
   candles.shift();
   candles.push({ o: last.c, c: nextC, h: Math.min(last.c, nextC) - 8, l: Math.max(last.c, nextC) + 8 });
 
-  lCtx.fillStyle = "#090d16";
-  lCtx.fillRect(0, 0, 256, 160);
-
-  // Grid tipis
-  lCtx.strokeStyle = "#1e293b";
-  lCtx.lineWidth = 1;
-  for (let y = 30; y < 140; y += 26) {
-    lCtx.beginPath(); lCtx.moveTo(0, y); lCtx.lineTo(256, y); lCtx.stroke();
-  }
-
-  // Gambar Candlestick
+  lCtx.fillStyle = "#090d16"; lCtx.fillRect(0, 0, 256, 160);
   candles.forEach((cd, idx) => {
-    const x = 10 + idx * 13;
-    const isUp = cd.c <= cd.o;
-    lCtx.strokeStyle = isUp ? "#22c55e" : "#ef4444";
-    lCtx.fillStyle = isUp ? "#22c55e" : "#ef4444";
+    const x = 10 + idx * 13, up = cd.c <= cd.o;
+    lCtx.strokeStyle = up ? "#22c55e" : "#ef4444"; lCtx.fillStyle = lCtx.strokeStyle;
     lCtx.beginPath(); lCtx.moveTo(x + 4, cd.h); lCtx.lineTo(x + 4, cd.l); lCtx.stroke();
-    const top = Math.min(cd.o, cd.c);
-    const h = Math.max(4, Math.abs(cd.c - cd.o));
-    lCtx.fillRect(x, top, 8, h);
+    lCtx.fillRect(x, Math.min(cd.o, cd.c), 8, Math.max(4, Math.abs(cd.c - cd.o)));
   });
-
-  // Garis EMA
-  lCtx.strokeStyle = "#38bdf8";
-  lCtx.lineWidth = 2;
-  lCtx.beginPath();
-  candles.forEach((cd, idx) => {
-    const x = 14 + idx * 13;
-    const y = (cd.o + cd.c) / 2;
-    if (idx === 0) lCtx.moveTo(x, y); else lCtx.lineTo(x, y);
-  });
-  lCtx.stroke();
-
-  // Header & Kotak Sinyal BUY/SELL/HOLD
-  lCtx.fillStyle = "rgba(15,23,42,0.88)";
-  lCtx.fillRect(0, 0, 256, 26);
-  lCtx.fillStyle = "#f8fafc";
-  lCtx.font = "bold 12px sans-serif";
-  lCtx.fillText("EURUSD H1 • FBS", 8, 17);
-
-  const sigCol = currentSignal === "BUY" ? "#16a34a" : (currentSignal === "SELL" ? "#dc2626" : "#d97706");
-  lCtx.fillStyle = sigCol;
+  lCtx.fillStyle = "rgba(15,23,42,0.9)"; lCtx.fillRect(0, 0, 256, 26);
+  lCtx.fillStyle = "#fff"; lCtx.font = "bold 12px sans-serif"; lCtx.fillText("EURUSD H1", 8, 17);
+  lCtx.fillStyle = currentSignal === "BUY" ? "#16a34a" : (currentSignal === "SELL" ? "#dc2626" : "#d97706");
   lCtx.fillRect(176, 3, 74, 20);
-  lCtx.fillStyle = "#ffffff";
-  lCtx.font = "900 12px sans-serif";
-  lCtx.fillText(currentSignal, 196, 17);
-
+  lCtx.fillStyle = "#fff"; lCtx.fillText(currentSignal, 196, 17);
   laptopTex.needsUpdate = true;
+
+  // Layar Radar Airdrop (Hijau Emerald)
+  aCtx.fillStyle = "#042f2e"; aCtx.fillRect(0, 0, 256, 160);
+  aCtx.strokeStyle = "#10b981"; aCtx.lineWidth = 2;
+  aCtx.beginPath(); aCtx.arc(128, 92, 46, 0, Math.PI * 2); aCtx.stroke();
+  aCtx.beginPath(); aCtx.arc(128, 92, 24, 0, Math.PI * 2); aCtx.stroke();
+  aCtx.fillStyle = "#34d399"; aCtx.beginPath(); aCtx.arc(146, 76, 5, 0, Math.PI * 2); aCtx.fill();
+  aCtx.fillStyle = "#064e3b"; aCtx.fillRect(0, 0, 256, 28);
+  aCtx.fillStyle = "#6ee7b7"; aCtx.font = "bold 12px sans-serif";
+  aCtx.fillText("AIRDROP RADAR • LIVE", 10, 18);
+  aCtx.fillStyle = "#fff"; aCtx.font = "bold 11px sans-serif";
+  aCtx.fillText("Target: " + topAirdropName.slice(0, 22), 10, 150);
+  adTex.needsUpdate = true;
 }
 
-// Tekstur TV Berita Raksasa
 const tvCanvas = document.createElement("canvas");
 tvCanvas.width = 512; tvCanvas.height = 256;
 const tvCtx = tvCanvas.getContext("2d");
 const tvTex = new THREE.CanvasTexture(tvCanvas);
-
 const HEADLINES = [
   "BREAKING: THE FED TAHAN SUKU BUNGA, USD BERFLUKTUASI",
-  "KALENDER EKONOMI: DATA INFLASI EROPA RILIS MALAM INI",
-  "ANALISA H1: TREN EUR/USD DIPANTAU KETAT TIM AI",
-  "MANAJEMEN RISIKO: STOP LOSS 20 PIPS AKTIF DI AKUN CENT"
+  "ALPHA ALERT: PROYEK LAYER-2 BARU RILIS TESTNET GRATIS",
+  "ANALISA H1: TIM FOREX PANTAU TREN EUR/USD REALTIME",
+  "ANTI-SCAM: SELALU CEK KONTRAK SEBELUM KLAIM AIRDROP"
 ];
 let newsIdx = 0, tickerX = 512;
-
-function updateTvTexture() {
-  tvCtx.fillStyle = "#0f172a";
-  tvCtx.fillRect(0, 0, 512, 256);
-
-  // Header Channel Berita
-  tvCtx.fillStyle = "#dc2626";
-  tvCtx.fillRect(0, 0, 512, 42);
-  tvCtx.fillStyle = "#ffffff";
-  tvCtx.font = "900 20px sans-serif";
-  tvCtx.fillText("● FOREX LIVE NEWS TV", 16, 28);
-
-  tvCtx.fillStyle = "#fef08a";
-  tvCtx.font = "bold 15px sans-serif";
-  tvCtx.fillText("SESI LONDON & NEW YORK", 295, 27);
-
-  // Konten Utama Berita
-  tvCtx.fillStyle = "#1e293b";
-  tvCtx.fillRect(16, 56, 480, 136);
-  tvCtx.fillStyle = "#38bdf8";
-  tvCtx.font = "bold 16px sans-serif";
-  tvCtx.fillText("LAPORAN PASAR & SENTIMEN MAKRO", 32, 84);
-
-  tvCtx.fillStyle = "#ffffff";
-  tvCtx.font = "800 20px sans-serif";
+function updateTv() {
+  tvCtx.fillStyle = "#0f172a"; tvCtx.fillRect(0, 0, 512, 256);
+  tvCtx.fillStyle = "#dc2626"; tvCtx.fillRect(0, 0, 512, 42);
+  tvCtx.fillStyle = "#fff"; tvCtx.font = "900 20px sans-serif";
+  tvCtx.fillText("● FOREX & CRYPTO NEWS TV", 16, 28);
+  tvCtx.fillStyle = "#1e293b"; tvCtx.fillRect(16, 56, 480, 136);
+  tvCtx.fillStyle = "#38bdf8"; tvCtx.font = "bold 16px sans-serif";
+  tvCtx.fillText("LAPORAN PASAR & RADAR AIRDROP", 32, 84);
+  tvCtx.fillStyle = "#fff"; tvCtx.font = "800 20px sans-serif";
   const hl = HEADLINES[newsIdx % HEADLINES.length];
   tvCtx.fillText(hl.slice(0, 36), 32, 122);
   tvCtx.fillText(hl.slice(36), 32, 150);
-
-  // Running Text Bawah
-  tvCtx.fillStyle = "#eab308";
-  tvCtx.fillRect(0, 208, 512, 48);
-  tvCtx.fillStyle = "#090d16";
-  tvCtx.font = "900 18px sans-serif";
-  tvCtx.fillText("EUR/USD  •  XAU/USD  •  GBP/USD  •  USD/JPY  •  FBS MT5", tickerX, 239);
+  tvCtx.fillStyle = "#eab308"; tvCtx.fillRect(0, 208, 512, 48);
+  tvCtx.fillStyle = "#090d16"; tvCtx.font = "900 18px sans-serif";
+  tvCtx.fillText("EUR/USD  •  TESTNET  •  RETROACTIVE  •  FBS MT5", tickerX, 239);
   tickerX -= 28;
-  if (tickerX < -460) {
-    tickerX = 512;
-    newsIdx++;
-  }
-
+  if (tickerX < -460) { tickerX = 512; newsIdx++; }
   tvTex.needsUpdate = true;
 }
+updateScreens(); updateTv();
+setInterval(() => { updateScreens(); updateTv(); }, 700);
 
-updateLaptopTexture();
-updateTvTexture();
-setInterval(() => { updateLaptopTexture(); updateTvTexture(); }, 700);
-
-// ================= SCENE 3D GEDUNG TRADING =================
+// ================= SCENE 3D GEDUNG 3 LANTAI =================
 const c3 = document.getElementById("c3d");
 const scene = new THREE.Scene();
 const cam = new THREE.PerspectiveCamera(40, c3.clientWidth / c3.clientHeight, 0.1, 200);
@@ -259,25 +250,16 @@ c3.appendChild(ren.domElement);
 
 scene.add(new THREE.AmbientLight(0xf8fafc, 0.95));
 const dirLight = new THREE.DirectionalLight(0xffffff, 0.85);
-dirLight.position.set(12, 24, 15);
+dirLight.position.set(12, 28, 15);
 scene.add(dirLight);
-const blueGlow = new THREE.PointLight(0x38bdf8, 0.8, 18);
-blueGlow.position.set(-2, 4.5, 0);
-scene.add(blueGlow);
 
-let tgt = new THREE.Vector3(0, 2.3, 0), goalTgt = new THREE.Vector3(0, 2.3, 0);
-let th = 0.62, ph = 0.92, rad = 22, goalRad = 22;
-
+let tgt = new THREE.Vector3(0, 3.2, 0), goalTgt = new THREE.Vector3(0, 3.2, 0);
+let th = 0.62, ph = 0.90, rad = 26, goalRad = 26;
 function updCam() {
-  cam.position.set(
-    tgt.x + rad * Math.sin(ph) * Math.sin(th),
-    tgt.y + rad * Math.cos(ph),
-    tgt.z + rad * Math.sin(ph) * Math.cos(th)
-  );
+  cam.position.set(tgt.x + rad * Math.sin(ph) * Math.sin(th), tgt.y + rad * Math.cos(ph), tgt.z + rad * Math.sin(ph) * Math.cos(th));
   cam.lookAt(tgt);
 }
 updCam();
-
 function setCam(x, y, z, r, el) {
   goalTgt.set(x, y, z); goalRad = r;
   document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
@@ -296,69 +278,48 @@ c3.addEventListener("pointermove", e => {
 c3.addEventListener("touchmove", e => {
   if (e.touches.length === 2) {
     const d = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
-    if (pdist > 0) goalRad = Math.max(8, Math.min(34, goalRad - (d - pdist) * 0.05));
+    if (pdist > 0) goalRad = Math.max(8, Math.min(40, goalRad - (d - pdist) * 0.05));
     pdist = d;
   }
 }, { passive: true });
 c3.addEventListener("touchend", () => pdist = 0);
 
-const FH = 3.2;
-
-// Bangun Struktur Gedung 2 Lantai
-for (let f = 0; f < 2; f++) {
+const FH = 3.1;
+for (let f = 0; f < 3; f++) {
   const y = f * FH;
   const slab = new THREE.Mesh(new THREE.BoxGeometry(11.4, 0.24, 7.2), new THREE.MeshStandardMaterial({ color: 0x1e293b }));
   slab.position.set(0, y - 0.12, 0);
-  const tile = new THREE.Mesh(new THREE.BoxGeometry(11.0, 0.04, 6.8), new THREE.MeshStandardMaterial({ color: f === 0 ? 0xe2e8f0 : 0xf1f5f9 }));
+  const tile = new THREE.Mesh(new THREE.BoxGeometry(11.0, 0.04, 6.8), new THREE.MeshStandardMaterial({ color: f === 2 ? 0xecfdf5 : (f === 0 ? 0xe2e8f0 : 0xf1f5f9) }));
   tile.position.set(0, y, 0);
-  const backWall = new THREE.Mesh(new THREE.BoxGeometry(11.0, 2.3, 0.16), new THREE.MeshStandardMaterial({ color: 0xf8fafc }));
-  backWall.position.set(0, y + 1.15, -3.35);
-  const leftWall = new THREE.Mesh(new THREE.BoxGeometry(0.16, 2.3, 6.8), new THREE.MeshStandardMaterial({ color: 0xe2e8f0 }));
-  leftWall.position.set(-5.45, y + 1.15, 0);
-  const glassFront = new THREE.Mesh(new THREE.BoxGeometry(11.0, 0.65, 0.08), new THREE.MeshStandardMaterial({ color: 0x38bdf8, transparent: true, opacity: 0.25 }));
-  glassFront.position.set(0, y + 0.33, 3.35);
-  scene.add(slab, tile, backWall, leftWall, glassFront);
+  const backWall = new THREE.Mesh(new THREE.BoxGeometry(11.0, 2.2, 0.16), new THREE.MeshStandardMaterial({ color: 0xf8fafc }));
+  backWall.position.set(0, y + 1.1, -3.35);
+  const leftWall = new THREE.Mesh(new THREE.BoxGeometry(0.16, 2.2, 6.8), new THREE.MeshStandardMaterial({ color: 0xe2e8f0 }));
+  leftWall.position.set(-5.45, y + 1.1, 0);
+  scene.add(slab, tile, backWall, leftWall);
 }
 
-// Karpet Zona Ruangan
 function addCarpet(x, y, z, w, d, col) {
   const m = new THREE.Mesh(new THREE.BoxGeometry(w, 0.03, d), new THREE.MeshStandardMaterial({ color: col, transparent: true, opacity: 0.72 }));
-  m.position.set(x, y + 0.02, z);
-  scene.add(m);
+  m.position.set(x, y + 0.02, z); scene.add(m);
 }
-addCarpet(-1.4, 0, 0.4, 6.8, 4.4, 0x38bdf8);   // Karpet Trading Floor Lantai 1
-addCarpet(3.8, 0, -1.2, 2.6, 3.4, 0x64748b);   // Karpet Server Room Lantai 1
-addCarpet(-2.2, FH, -0.4, 5.4, 4.6, 0xa78bfa); // Karpet Ruang Nonton Berita TV Lantai 2
-addCarpet(3.2, FH, -0.4, 3.8, 4.6, 0xfbbf24);  // Karpet Pantry & Kopi Lantai 2
+addCarpet(-1.4, 0, 0.4, 6.8, 4.4, 0x38bdf8);        // Lt.1 Forex
+addCarpet(3.8, 0, -1.2, 2.6, 3.4, 0x64748b);        // Lt.1 Server
+addCarpet(-2.2, FH, -0.4, 5.4, 4.6, 0xa78bfa);      // Lt.2 TV Berita
+addCarpet(3.2, FH, -0.4, 3.8, 4.6, 0xfbbf24);       // Lt.2 Pantry
+addCarpet(-1.2, 2 * FH, 0.3, 7.4, 4.6, 0x10b981);   // Lt.3 Lab Pemburu Airdrop
 
-// Dekorasi Tanaman Hias
-function addPlant(x, y, z) {
-  const g = new THREE.Group();
-  const pot = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.14, 0.28, 12), new THREE.MeshStandardMaterial({ color: 0xffffff }));
-  pot.position.y = 0.14;
-  const leaf = new THREE.Mesh(new THREE.DodecahedronGeometry(0.28, 1), new THREE.MeshStandardMaterial({ color: 0x16a34a }));
-  leaf.position.y = 0.42;
-  g.add(pot, leaf); g.position.set(x, y, z); scene.add(g);
-}
-addPlant(-4.8, 0, -2.7); addPlant(1.8, 0, -2.7);
-addPlant(-4.8, FH, 2.6); addPlant(4.8, FH, -2.7);
-
-// Dekorasi Rak Server dengan Lampu Berkedip (Lantai 1 Kanan)
+// Rak Server Lt.1
 const serverLeds = [];
 for (let sx = 3.2; sx <= 4.4; sx += 1.2) {
   const rack = new THREE.Mesh(new THREE.BoxGeometry(0.85, 1.85, 0.75), new THREE.MeshStandardMaterial({ color: 0x0f172a }));
-  rack.position.set(sx, 0.94, -1.8);
-  scene.add(rack);
+  rack.position.set(sx, 0.94, -1.8); scene.add(rack);
   for (let ly = 0.4; ly <= 1.5; ly += 0.35) {
     const led = new THREE.Mesh(new THREE.BoxGeometry(0.45, 0.05, 0.04), new THREE.MeshStandardMaterial({ color: 0x22c55e, emissive: 0x22c55e, emissiveIntensity: 0.9 }));
-    led.position.set(sx, ly, -1.41);
-    scene.add(led);
-    serverLeds.push(led);
+    led.position.set(sx, ly, -1.41); scene.add(led); serverLeds.push(led);
   }
 }
 
-// Meja Trading & Laptop 3D dengan Grafik Sinyal Live
-function addTradingDesk(x, y, z) {
+function addWorkDesk(x, y, z, screenTex) {
   const g = new THREE.Group();
   const desk = new THREE.Mesh(new THREE.BoxGeometry(1.55, 0.08, 0.75), new THREE.MeshStandardMaterial({ color: 0xffffff }));
   desk.position.y = 0.56;
@@ -366,80 +327,54 @@ function addTradingDesk(x, y, z) {
     const leg = new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.56, 0.65), new THREE.MeshStandardMaterial({ color: 0x334155 }));
     leg.position.set(lx, 0.28, 0); g.add(leg);
   });
-
-  // Laptop 3D (Base Keyboard + Layar Miring dengan Grafik Trading)
   const lapBase = new THREE.Mesh(new THREE.BoxGeometry(0.56, 0.03, 0.38), new THREE.MeshStandardMaterial({ color: 0x94a3b8 }));
   lapBase.position.set(0, 0.615, 0.04);
   const lapLid = new THREE.Mesh(
     new THREE.BoxGeometry(0.56, 0.36, 0.025),
     [
-      new THREE.MeshStandardMaterial({ color: 0x475569 }),
-      new THREE.MeshStandardMaterial({ color: 0x475569 }),
-      new THREE.MeshStandardMaterial({ color: 0x475569 }),
-      new THREE.MeshStandardMaterial({ color: 0x475569 }),
-      new THREE.MeshBasicMaterial({ map: laptopTex }), // Layar depan menghadap kursi (+Z)
-      new THREE.MeshStandardMaterial({ color: 0x334155 }),
+      new THREE.MeshStandardMaterial({ color: 0x475569 }), new THREE.MeshStandardMaterial({ color: 0x475569 }),
+      new THREE.MeshStandardMaterial({ color: 0x475569 }), new THREE.MeshStandardMaterial({ color: 0x475569 }),
+      new THREE.MeshBasicMaterial({ map: screenTex }), new THREE.MeshStandardMaterial({ color: 0x334155 }),
     ]
   );
-  lapLid.position.set(0, 0.78, -0.14);
-  lapLid.rotation.x = -0.18;
-
-  // Cangkir kopi kecil di meja
-  const mug = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.04, 0.09, 10), new THREE.MeshStandardMaterial({ color: 0xfacc15 }));
-  mug.position.set(0.48, 0.64, 0.06);
-
-  // Kursi Kantor Hitam
+  lapLid.position.set(0, 0.78, -0.14); lapLid.rotation.x = -0.18;
   const seat = new THREE.Mesh(new THREE.BoxGeometry(0.44, 0.07, 0.44), new THREE.MeshStandardMaterial({ color: 0x1e293b }));
   seat.position.set(0, 0.34, 0.48);
   const back = new THREE.Mesh(new THREE.BoxGeometry(0.42, 0.44, 0.07), new THREE.MeshStandardMaterial({ color: 0x1e293b }));
   back.position.set(0, 0.56, 0.67);
-  const stem = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 0.34, 8), new THREE.MeshStandardMaterial({ color: 0x475569 }));
-  stem.position.set(0, 0.17, 0.48);
-
-  g.add(desk, lapBase, lapLid, mug, seat, back, stem);
-  g.position.set(x, y, z);
-  scene.add(g);
+  g.add(desk, lapBase, lapLid, seat, back);
+  g.position.set(x, y, z); scene.add(g);
 }
 
-// 4 Meja Laptop di Trading Floor Lantai 1
-const DESKS = [
-  { x: -3.2, z: -0.9 },
-  { x: -0.6, z: -0.9 },
-  { x: -3.2, z:  1.4 },
-  { x: -0.6, z:  1.4 },
-];
-DESKS.forEach(d => addTradingDesk(d.x, 0, d.z));
+// 4 Meja Forex Lt.1
+[{x:-3.2,z:-0.9},{x:-0.6,z:-0.9},{x:-3.2,z:1.4},{x:-0.6,z:1.4}].forEach(d => addWorkDesk(d.x, 0, d.z, laptopTex));
+// 3 Meja Airdrop Hunter Lt.3
+[{x:-3.2,z:-0.5},{x:-1.0,z:-0.5},{x:1.2,z:-0.5}].forEach(d => addWorkDesk(d.x, 2 * FH, d.z, adTex));
 
-// Ruang Nonton Berita TV (Lantai 2 Kiri)
+// TV Berita & Sofa Lt.2
 const tvFrame = new THREE.Mesh(new THREE.BoxGeometry(3.2, 1.65, 0.12), new THREE.MeshStandardMaterial({ color: 0x0f172a }));
 tvFrame.position.set(-2.2, FH + 1.35, -3.22);
 const tvScreen = new THREE.Mesh(new THREE.PlaneGeometry(3.02, 1.48), new THREE.MeshBasicMaterial({ map: tvTex }));
 tvScreen.position.set(-2.2, FH + 1.35, -3.15);
-
 const sofa = new THREE.Mesh(new THREE.BoxGeometry(2.8, 0.46, 0.85), new THREE.MeshStandardMaterial({ color: 0x4f46e5 }));
 sofa.position.set(-2.2, FH + 0.25, -0.8);
-const sofaBack = new THREE.Mesh(new THREE.BoxGeometry(2.8, 0.45, 0.2), new THREE.MeshStandardMaterial({ color: 0x4338ca }));
-sofaBack.position.set(-2.2, FH + 0.6, -0.45);
-scene.add(tvFrame, tvScreen, sofa, sofaBack);
-
-// Pantry & Kopi (Lantai 2 Kanan)
 const bar = new THREE.Mesh(new THREE.BoxGeometry(2.6, 0.78, 0.65), new THREE.MeshStandardMaterial({ color: 0xffffff }));
 bar.position.set(3.2, FH + 0.4, -2.2);
-const espresso = new THREE.Mesh(new THREE.BoxGeometry(0.55, 0.45, 0.42), new THREE.MeshStandardMaterial({ color: 0x1e293b }));
-espresso.position.set(2.6, FH + 1.0, -2.2);
-const cafeTable = new THREE.Mesh(new THREE.CylinderGeometry(0.58, 0.58, 0.06, 18), new THREE.MeshStandardMaterial({ color: 0xf8fafc }));
-cafeTable.position.set(3.2, FH + 0.56, 0.2);
-const cafeLeg = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.08, 0.56, 10), new THREE.MeshStandardMaterial({ color: 0x475569 }));
-cafeLeg.position.set(3.2, FH + 0.28, 0.2);
-scene.add(bar, espresso, cafeTable, cafeLeg);
+scene.add(tvFrame, tvScreen, sofa, bar);
 
-// ================= 5 KARYAWAN AI 3D =================
+// ================= 8 KARYAWAN AI 3D =================
 const STAFF = [
-  { id: "rizky", name: "Rizky • Analyst",   shirt: "#0284c7", hair: "#18181b", skin: "#fed7aa", hx: -3.2, hz: -0.42, hf: 0 },
-  { id: "arman", name: "Arman • Trader",    shirt: "#16a34a", hair: "#1e1b18", skin: "#fde68a", hx: -0.6, hz: -0.42, hf: 0 },
-  { id: "teguh", name: "Teguh • Risk Mgr",  shirt: "#dc2626", hair: "#e2e8f0", skin: "#fed7aa", hx: -3.2, hz:  1.88, hf: 0 },
-  { id: "kevin", name: "Kevin • MT5 Bot",   shirt: "#4f46e5", hair: "#27272a", skin: "#fef08a", hx: -0.6, hz:  1.88, hf: 0 },
-  { id: "nadia", name: "Nadia • News TV",   shirt: "#db2777", hair: "#3f2e21", skin: "#fde68a", hx: -2.2, hz: -0.95, hf: 1 },
+  // Divisi Forex (Lt.1)
+  { id: "rizky", name: "Rizky • Analyst",   shirt: "#0284c7", hair: "#18181b", skin: "#fed7aa", hx: -3.2, hz: -0.42, hf: 0, div: "fx" },
+  { id: "arman", name: "Arman • Trader",    shirt: "#16a34a", hair: "#1e1b18", skin: "#fde68a", hx: -0.6, hz: -0.42, hf: 0, div: "fx" },
+  { id: "teguh", name: "Teguh • Risk Mgr",  shirt: "#dc2626", hair: "#e2e8f0", skin: "#fed7aa", hx: -3.2, hz:  1.88, hf: 0, div: "fx" },
+  { id: "kevin", name: "Kevin • MT5 Bot",   shirt: "#4f46e5", hair: "#27272a", skin: "#fef08a", hx: -0.6, hz:  1.88, hf: 0, div: "fx" },
+  // Divisi Berita (Lt.2)
+  { id: "nadia", name: "Nadia • News TV",   shirt: "#db2777", hair: "#3f2e21", skin: "#fde68a", hx: -2.2, hz: -0.95, hf: 1, div: "tv" },
+  // Divisi Pemburu Airdrop (Lt.3)
+  { id: "dian",  name: "Dian • Alpha Hunt", shirt: "#059669", hair: "#18181b", skin: "#fde68a", hx: -3.2, hz: -0.02, hf: 2, div: "ad" },
+  { id: "bagas", name: "Bagas • Testnet",   shirt: "#0d9488", hair: "#27272a", skin: "#fed7aa", hx: -1.0, hz: -0.02, hf: 2, div: "ad" },
+  { id: "sinta", name: "Sinta • Anti-Scam", shirt: "#eab308", hair: "#3f2e21", skin: "#fef08a", hx:  1.2, hz: -0.02, hf: 2, div: "ad" },
 ];
 
 const rigs = {};
@@ -456,19 +391,12 @@ STAFF.forEach(s => {
   head.position.y = 0.62;
   const hair = new THREE.Mesh(new THREE.BoxGeometry(0.33, 0.13, 0.33), new THREE.MeshStandardMaterial({ color: s.hair }));
   hair.position.y = 0.74;
-  const eyeG = new THREE.BoxGeometry(0.04, 0.04, 0.03);
-  const eyeM = new THREE.MeshStandardMaterial({ color: 0x0f172a });
-  const eL = new THREE.Mesh(eyeG, eyeM); eL.position.set(-0.07, 0.62, 0.16);
-  const eR = new THREE.Mesh(eyeG, eyeM); eR.position.set( 0.07, 0.62, 0.16);
-  hips.add(torso, head, hair, eL, eR);
+  hips.add(torso, head, hair);
 
   function mkArm(sx) {
     const p = new THREE.Group(); p.position.set(sx, 0.42, 0);
     const m = new THREE.Mesh(new THREE.BoxGeometry(0.10, 0.36, 0.10), new THREE.MeshStandardMaterial({ color: s.shirt }));
-    m.position.y = -0.16;
-    const h = new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.09, 0.09), new THREE.MeshStandardMaterial({ color: s.skin }));
-    h.position.y = -0.35;
-    p.add(m, h); hips.add(p); return p;
+    m.position.y = -0.16; p.add(m); hips.add(p); return p;
   }
   function mkLeg(sx) {
     const p = new THREE.Group(); p.position.set(sx, 0.02, 0);
@@ -481,76 +409,50 @@ STAFF.forEach(s => {
   rigs[s.id] = { root, hips, armL, armR, legL, legR, d: s, phase: Math.random() * 8 };
 });
 
-// Rutinitas Karyawan Trading (Ngetik Laptop, Nonton TV Berita, Cek Server, Ngopi)
 function updateRoutine() {
   STAFF.forEach(s => {
     const r = Math.random();
-    if (s.id === "nadia") {
-      // Nadia fokus mantau TV berita & sesekali lapor ke Arman
-      if (r < 0.75) {
-        s.tfloor = 1; s.tx = -2.2 + (Math.random() * 1.2 - 0.6); s.tz = -0.95;
-        s.sitting = true; s.faceAngle = Math.PI; s.mode = "tv";
-        s.bubble = "Pantau news FED di TV";
-      } else {
-        s.tfloor = 1; s.tx = 2.6; s.tz = 0.2;
-        s.sitting = false; s.faceAngle = 0; s.mode = "coffee";
-        s.bubble = "Ngopi bentar";
-      }
+    if (s.div === "tv") {
+      s.tfloor = 1; s.tx = -2.2 + (Math.random() - 0.5); s.tz = -0.95;
+      s.sitting = true; s.faceAngle = Math.PI; s.mode = "tv"; s.bubble = "Pantau news kripto & USD";
       return;
     }
-
-    if (r < 0.64) {
-      // Kerja di depan laptop
-      s.tfloor = 0; s.tx = s.hx; s.tz = s.hz;
-      s.sitting = true; s.faceAngle = Math.PI; s.mode = "work";
-      if (s.id === "arman") s.bubble = `Sinyal ${currentSignal} EURUSD`;
-      else if (s.id === "rizky") s.bubble = "Cek EMA & RSI H1";
-      else if (s.id === "teguh") s.bubble = "SL 20 pips terkunci";
-      else s.bubble = "Koneksi FBS MT5 OK";
-    } else if (r < 0.84) {
-      // Naik ke Lantai 2 buat nonton berita TV bareng Nadia
-      s.tfloor = 1; s.tx = -1.6 + (Math.random() * 1.4 - 0.7); s.tz = -0.95;
-      s.sitting = true; s.faceAngle = Math.PI; s.mode = "tv";
-      s.bubble = "Nonton berita market";
+    if (r < 0.72) {
+      s.tfloor = s.hf; s.tx = s.hx; s.tz = s.hz; s.sitting = true; s.faceAngle = Math.PI; s.mode = "work";
+      if (s.id === "arman") s.bubble = `Sinyal ${currentSignal}`;
+      else if (s.id === "dian") s.bubble = `Cek ${topAirdropName.slice(0,14)}`;
+      else if (s.id === "bagas") s.bubble = "Susun langkah testnet";
+      else if (s.id === "sinta") s.bubble = "Filter anti-scam OK";
+      else s.bubble = "";
+    } else if (r < 0.88) {
+      s.tfloor = 1; s.tx = -1.6 + (Math.random() - 0.5); s.tz = -0.95;
+      s.sitting = true; s.faceAngle = Math.PI; s.mode = "tv"; s.bubble = "Nonton TV berita";
     } else {
-      // Ngopi di Pantry Lantai 2
-      s.tfloor = 1; s.tx = 3.2 + (Math.random() * 1.0 - 0.5); s.tz = 0.75;
-      s.sitting = false; s.faceAngle = Math.PI; s.mode = "coffee";
-      s.bubble = "Kopi dulu biar fokus";
+      s.tfloor = 1; s.tx = 3.2 + (Math.random() - 0.5); s.tz = 0.5;
+      s.sitting = false; s.faceAngle = Math.PI; s.mode = "coffee"; s.bubble = "Ngopi dulu";
     }
   });
 }
 updateRoutine();
 setInterval(updateRoutine, 5500);
 
-// Loop Animasi 60 FPS
 const clock = new THREE.Clock();
 function anim() {
   requestAnimationFrame(anim);
   const dt = Math.min(clock.getDelta(), 0.05);
   const el = clock.getElapsedTime();
-
   tgt.lerp(goalTgt, 0.1);
   rad += (goalRad - rad) * 0.1;
   updCam();
 
-  // Lampu rak server berkedip
-  serverLeds.forEach((led, idx) => {
-    led.material.emissiveIntensity = 0.4 + Math.abs(Math.sin(el * 5 + idx)) * 0.8;
-  });
+  serverLeds.forEach((led, i) => { led.material.emissiveIntensity = 0.4 + Math.abs(Math.sin(el * 5 + i)) * 0.8; });
 
   let html = "";
   const placed = [];
-
   Object.values(rigs).forEach(rig => {
     const d = rig.d, t = el + rig.phase;
-    if (d.floor !== d.tfloor) {
-      d.floor = d.tfloor;
-      rig.root.position.y = d.floor * FH;
-    }
-
-    const dx = d.tx - rig.root.position.x;
-    const dz = d.tz - rig.root.position.z;
+    if (d.floor !== d.tfloor) { d.floor = d.tfloor; rig.root.position.y = d.floor * FH; }
+    const dx = d.tx - rig.root.position.x, dz = d.tz - rig.root.position.z;
     const dist = Math.hypot(dx, dz);
 
     if (dist > 0.06) {
@@ -561,45 +463,32 @@ function anim() {
       rig.hips.position.y = 0.54 + Math.abs(Math.sin(t * 11)) * 0.04;
       rig.legL.rotation.x = Math.sin(t * 11) * 0.65;
       rig.legR.rotation.x = -Math.sin(t * 11) * 0.65;
-      rig.armL.rotation.x = -Math.sin(t * 11) * 0.55;
-      rig.armR.rotation.x = Math.sin(t * 11) * 0.55;
     } else {
       rig.root.rotation.y += (d.faceAngle - rig.root.rotation.y) * 0.15;
       if (d.sitting) {
         rig.hips.position.y = 0.36;
-        rig.legL.rotation.x = -Math.PI / 2;
-        rig.legR.rotation.x = -Math.PI / 2;
-        if (d.mode === "work") {
-          rig.armL.rotation.x = -0.95 + Math.sin(t * 18) * 0.15;
-          rig.armR.rotation.x = -0.95 - Math.sin(t * 18) * 0.15;
-        } else {
-          rig.armL.rotation.x = -0.25;
-          rig.armR.rotation.x = -0.25;
-        }
+        rig.legL.rotation.x = -Math.PI / 2; rig.legR.rotation.x = -Math.PI / 2;
+        rig.armL.rotation.x = d.mode === "work" ? -0.95 + Math.sin(t * 18) * 0.15 : -0.25;
+        rig.armR.rotation.x = d.mode === "work" ? -0.95 - Math.sin(t * 18) * 0.15 : -0.25;
       } else {
         rig.hips.position.y = 0.54;
         rig.legL.rotation.x = 0; rig.legR.rotation.x = 0;
         rig.armR.rotation.x = -0.6 + Math.sin(t * 3.5) * 0.4;
-        rig.armL.rotation.x = -0.15;
       }
     }
 
     const p = rig.root.position.clone().add(new THREE.Vector3(0, 1.5, 0)).project(cam);
     if (p.z < 1) {
-      let sx = (p.x * 0.5 + 0.5) * c3.clientWidth;
-      let sy = (-p.y * 0.5 + 0.5) * c3.clientHeight;
+      let sx = (p.x * 0.5 + 0.5) * c3.clientWidth, sy = (-p.y * 0.5 + 0.5) * c3.clientHeight;
       for (const b of placed) {
         if (Math.abs(sx - b.x) < 62 && Math.abs(sy - b.y) < 18) sy = b.y - 19;
       }
       placed.push({ x: sx, y: sy });
-      const dotCol = d.mode === "work" ? "#22c55e" : (d.mode === "tv" ? "#38bdf8" : "#eab308");
+      const dotCol = d.div === "ad" ? "#10b981" : (d.mode === "tv" ? "#38bdf8" : "#22c55e");
       html += `<div class="atag" style="left:${sx}px;top:${sy}px"><span class="dot" style="background:${dotCol}"></span>${d.name}</div>`;
-      if (d.bubble && rad < 26) {
-        html += `<div class="bub" style="left:${sx}px;top:${sy}px">${d.bubble}</div>`;
-      }
+      if (d.bubble && rad < 28) html += `<div class="bub" style="left:${sx}px;top:${sy}px">${d.bubble}</div>`;
     }
   });
-
   document.getElementById("labels").innerHTML = html;
   ren.render(scene, cam);
 }
