@@ -33,7 +33,6 @@ def simpan_porto():
         json.dump(porto, f, indent=2, ensure_ascii=False)
 
 def ambil_harga_h1():
-    # Sumber 1: Kraken Public OHLC (Stabil & bebas blokir dari server GitHub)
     try:
         url_k = "https://api.kraken.com/0/public/OHLC?pair=EURUSD&interval=60"
         req_k = urllib.request.Request(url_k, headers={"User-Agent": "Mozilla/5.0"})
@@ -46,7 +45,6 @@ def ambil_harga_h1():
     except Exception as e:
         print("Info Kraken:", e)
 
-    # Sumber 2: Yahoo Finance
     url_y = "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD=X?interval=1h&range=10d"
     req_y = urllib.request.Request(url_y, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req_y, timeout=20) as res:
@@ -137,7 +135,7 @@ def main():
     {{"keputusan": "BUY atau SELL atau HOLD", "alasan": "1 kalimat singkat bahasa Indonesia"}}
     """
     res = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.0-flash",
         contents=prompt,
         config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.2),
     )
