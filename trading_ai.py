@@ -7,6 +7,9 @@ API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 METAAPI_TOKEN = os.environ.get("METAAPI_TOKEN", "").strip()
 METAAPI_ACCOUNT_ID = os.environ.get("METAAPI_ACCOUNT_ID", "").strip()
 
+if not API_KEY:
+    raise RuntimeError("GEMINI_API_KEY masih kosong! Cek lagi di Settings -> Secrets -> Actions.")
+
 client = genai.Client(api_key=API_KEY)
 STATE_FILE = "porto_cent.json"
 
@@ -30,23 +33,26 @@ def simpan_porto():
         json.dump(porto, f, indent=2, ensure_ascii=False)
 
 def ambil_harga_h1():
+    # Sumber 1: Kraken Public OHLC (Stabil & bebas blokir dari server GitHub)
     try:
-        url = "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD=X?interval=1h&range=10d"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=20) as res:
-            data = json.loads(res.read().decode())
-        closes = data["chart"]["result"][0]["indicators"]["quote"][0]["close"]
-        hasil = [float(c) for c in closes if c is not None]
+        url_k = "https://api.kraken.com/0/public/OHLC?pair=EURUSD&interval=60"
+        req_k = urllib.request.Request(url_k, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req_k, timeout=20) as res:
+            kdata = json.loads(res.read().decode())
+        pair_key = [k for k in kdata["result"].keys() if k != "last"][0]
+        hasil = [float(c[4]) for c in kdata["result"][pair_key][-70:]]
         if len(hasil) >= 55:
             return hasil
-    except Exception:
-        pass
+    except Exception as e:
+        print("Info Kraken:", e)
 
-    url_alt = "https://api.binance.com/api/v3/klines?symbol=EURUSDT&interval=1h&limit=70"
-    req_alt = urllib.request.Request(url_alt, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req_alt, timeout=20) as res:
-        klines = json.loads(res.read().decode())
-    return [float(k[4]) for k in klines]
+    # Sumber 2: Yahoo Finance
+    url_y = "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD=X?interval=1h&range=10d"
+    req_y = urllib.request.Request(url_y, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req_y, timeout=20) as res:
+        data = json.loads(res.read().decode())
+    closes = data["chart"]["result"][0]["indicators"]["quote"][0]["close"]
+    return [float(c) for c in closes if c is not None]
 
 def hitung_ema(data, periode):
     k = 2 / (periode + 1)
