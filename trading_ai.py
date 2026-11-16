@@ -72,6 +72,39 @@ def hitung_rsi(data, periode=14):
     rs = avg_gain / avg_loss
     return round(100 - (100 / (1 + rs)), 2)
 
+def tanya_gemini_otomatis(prompt):
+    kandidat = [
+        "gemini-3.0-flash",
+        "gemini-3-flash-preview",
+        "gemini-flash-latest",
+        "gemini-2.5-flash",
+    ]
+    try:
+        for m in client.models.list():
+            nama = m.name.replace("models/", "")
+            if "gemini" in nama and "flash" in nama and not any(x in nama for x in ["image", "audio", "tts", "thinking"]):
+                if nama not in kandidat:
+                    kandidat.append(nama)
+    except Exception as e:
+        print("Info list model:", e)
+
+    error_terakhir = None
+    for model_name in kandidat:
+        try:
+            print("Mencoba model:", model_name)
+            res = client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+                config=types.GenerateContentConfig(temperature=0.2),
+            )
+            if res and res.text:
+                return res.text
+        except Exception as e:
+            error_terakhir = e
+            print(f"Model {model_name} dilewati:", e)
+
+    raise RuntimeError(f"Semua model Gemini gagal dipanggil. Error terakhir: {error_terakhir}")
+
 def kirim_order_fbs(aksi, sl, tp):
     if not METAAPI_TOKEN or not METAAPI_ACCOUNT_ID:
         return "Mode Simulasi"
@@ -131,16 +164,12 @@ def main():
     Kamu adalah Senior Forex Trader konservatif untuk pair EURUSD timeframe H1.
     Data saat ini: Harga={harga_skrg}, EMA20={ema20}, EMA50={ema50}, RSI14={rsi14}.
     Aturan: BUY jika EMA20 > EMA50 dan RSI antara 45-68. SELL jika EMA20 < EMA50 dan RSI antara 32-55. Selain itu HOLD.
-    Balas HANYA JSON valid:
+    Balas HANYA JSON valid tanpa markdown:
     {{"keputusan": "BUY atau SELL atau HOLD", "alasan": "1 kalimat singkat bahasa Indonesia"}}
     """
-    res = client.models.generate_content(
-        model="gemini-3.0-flash",
-        contents=prompt,
-        config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.2),
-    )
-    m = re.search(r"\{.*\}", res.text, re.S)
-    analisa = json.loads(m.group(0) if m else res.text)
+    teks_jawaban = tanya_gemini_otomatis(prompt)
+    m = re.search(r"\{.*\}", teks_jawaban, re.S)
+    analisa = json.loads(m.group(0) if m else teks_jawaban)
 
     keputusan = analisa.get("keputusan", "HOLD").upper()
     alasan = analisa.get("alasan", "")
