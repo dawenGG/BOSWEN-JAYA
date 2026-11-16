@@ -17,16 +17,18 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install google-genai
-      - name: Analisa Pasar & Eksekusi
+      - name: Jalankan Divisi Forex & Pemburu Airdrop
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           METAAPI_TOKEN: ${{ secrets.METAAPI_TOKEN }}
           METAAPI_ACCOUNT_ID: ${{ secrets.METAAPI_ACCOUNT_ID }}
-        run: python trading_ai.py
-      - name: Simpan Laporan Saldo
         run: |
-          git config user.name "Karyawan Trading AI"
-          git config user.email "trader@github.com"
-          git add porto_cent.json
-          git commit -m "Update analisa & saldo trading" || exit 0
+          python trading_ai.py
+          python airdrop_ai.py
+      - name: Simpan Laporan Kantor
+        run: |
+          git config user.name "Karyawan AI HQ"
+          git config user.email "ai@github.com"
+          git add porto_cent.json airdrop_list.json
+          git commit -m "Update laporan forex & airdrop" || exit 0
           git push
