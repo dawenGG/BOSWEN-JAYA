@@ -1,0 +1,32 @@
+name: Karyawan Forex AI 24 Jam
+
+on:
+  schedule:
+    - cron: '5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  trading:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install google-genai
+      - name: Analisa Pasar & Eksekusi
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          METAAPI_TOKEN: ${{ secrets.METAAPI_TOKEN }}
+          METAAPI_ACCOUNT_ID: ${{ secrets.METAAPI_ACCOUNT_ID }}
+        run: python trading_ai.py
+      - name: Simpan Laporan Saldo
+        run: |
+          git config user.name "Karyawan Trading AI"
+          git config user.email "trader@github.com"
+          git add porto_cent.json
+          git commit -m "Update analisa & saldo trading" || exit 0
+          git push
