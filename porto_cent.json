@@ -1,7 +1,12 @@
 {
   "saldo_usc": 300.0,
-  "update_terakhir": "16 Nov 23:04 WIB",
-  "analisa_terakhir": "HOLD (Harga 1.10012) — EMA20 dan EMA50 bernilai sama sehingga belum menunjukkan tren yang jelas.",
-  "posisi": null,
+  "update_terakhir": "17 Nov 00:10 WIB",
+  "analisa_terakhir": "SELL (Harga 1.10015) [Mode Simulasi] — EMA20 di bawah EMA50 dan RSI berada dalam rentang jenuh jual yang valid untuk posisi sell.",
+  "posisi": {
+    "tipe": "SELL",
+    "entry": 1.10015,
+    "sl": 1.10215,
+    "tp": 1.09615
+  },
   "riwayat": []
 }
