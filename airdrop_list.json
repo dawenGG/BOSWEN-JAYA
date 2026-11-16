@@ -1,0 +1,35 @@
+{
+  "timestamp": 1794845107.364436,
+  "update_terakhir": "16 Nov 23:05 WIB",
+  "ringkasan": "Fokus perburuan hari ini didominasi oleh testnet gratis Layer-1/Layer-2 generasi baru dan akumulasi poin ekosistem potensial dengan risiko modal sangat rendah.",
+  "items": [
+    {
+      "nama": "Monad Testnet",
+      "tipe": "Testnet Gratis",
+      "potensi": "Tinggi",
+      "modal": "Gratis ($0)",
+      "langkah": "Klaim faucet testnet dari kanal resmi Monad dan lakukan interaksi swap serta bridge secara rutin pada dApps ekosistemnya. Pastikan hanya mengakses tautan resmi dari Discord verified untuk menghindari domain phishing."
+    },
+    {
+      "nama": "Movement Labs Testnet",
+      "tipe": "Testnet Gratis",
+      "potensi": "Tinggi",
+      "modal": "Gratis ($0)",
+      "langkah": "Hubungkan dompet testnet ke faucet jaringan Move-EVM lalu selesaikan quest interaksi smart contract yang tersedia di platform. Gunakan selalu burner wallet (dompet cadangan) khusus testnet demi keamanan aset utama Anda."
+    },
+    {
+      "nama": "Base DeFi Ecosystem Points",
+      "tipe": "Poin",
+      "potensi": "Tinggi",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Lakukan bridging ETH ke jaringan Base dan kumpulkan poin melalui aktivitas transaksi harian di protokol DeFi awal tanpa token. Selalu revoke izin smart contract yang tidak dikenal setelah selesai berinteraksi."
+    },
+    {
+      "nama": "Solana Ecosystem DeFi Program",
+      "tipe": "Poin",
+      "potensi": "Sedang",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Sediakan likuiditas minimal atau lakukan lending pada protokol DeFi baru di Solana untuk mengumpulkan poin retroactive. Waspadai iklan akun palsu di X (Twitter) yang mengarahkan ke situs peretas dompet."
+    }
+  ]
+}
