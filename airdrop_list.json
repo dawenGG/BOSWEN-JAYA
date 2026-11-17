@@ -1,6 +1,6 @@
 {
-  "timestamp": 1794899567.160771,
-  "update_terakhir": "17 Nov 14:12 WIB",
+  "timestamp": 1794913144.78651,
+  "update_terakhir": "17 Nov 17:59 WIB",
   "ringkasan": "Fokus ekosistem Solana, Base, dan Monad sedang mendominasi narasi airdrop dengan sistem poin yang sangat menguntungkan bagi partisipan awal.",
   "items": [
     {
@@ -8,28 +8,28 @@
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti akun resmi di X dan bergabung ke Discord untuk mendapatkan peran awal. Pantau peluncuran testnet publik dan lakukan transaksi di dApps ekosistem mereka segera setelah tersedia."
+      "langkah": "Ikuti akun resmi di X, pantau pengumuman peluncuran testnet, dan berinteraksi dengan dApps di ekosistemnya. Pastikan hanya menggunakan link dari situs resmi monad.xyz untuk menghindari phishing."
     },
     {
       "nama": "Base (Onchain Summer/Poin)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge ETH ke jaringan Base dan gunakan dApps populer seperti Aerodrome atau Uniswap secara rutin. Pastikan berinteraksi dengan kontrak pintar yang terverifikasi untuk menghindari phishing."
+      "langkah": "Bridge ETH ke jaringan Base dan gunakan dApps populer seperti Aerodrome atau Uniswap secara rutin. Selalu periksa izin kontrak (revoke) di revoke.cash setelah berinteraksi dengan protokol baru."
     },
     {
       "nama": "Solana Ecosystem (Jito/Kamino/Drift)",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Lakukan staking atau penyediaan likuiditas di protokol DeFi berbasis Solana untuk mengumpulkan poin. Gunakan wallet burner untuk berinteraksi dengan protokol baru guna menjaga keamanan aset utama."
+      "langkah": "Lakukan staking atau penyediaan likuiditas pada protokol DeFi di Solana yang memiliki sistem poin. Gunakan wallet burner (dompet khusus airdrop) yang tidak berisi aset utama untuk keamanan maksimal."
     },
     {
       "nama": "Layer-2 DeFi (Early Stage)",
       "tipe": "Testnet Gratis",
       "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Cari proyek L2 baru di platform seperti Galxe atau Layer3 yang belum memiliki token. Hubungkan wallet kosong (bukan wallet utama) dan selesaikan tugas sosial serta transaksi testnet untuk memenuhi syarat."
+      "langkah": "Cari proyek DeFi baru di jaringan L2 yang baru mendapat pendanaan dan buka testnet. Gunakan faucet resmi untuk mendapatkan token testnet dan hindari menghubungkan dompet ke situs yang meminta seed phrase."
     }
   ]
 }
