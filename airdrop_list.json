@@ -1,35 +1,35 @@
 {
-  "timestamp": 1794925034.316455,
-  "update_terakhir": "17 Nov 21:17 WIB",
-  "ringkasan": "Fokus perburuan hari ini tertuju pada ekosistem Layer-2 baru dan program poin testnet yang belum memiliki token.",
+  "timestamp": 1794938276.397985,
+  "update_terakhir": "18 Nov 00:57 WIB",
+  "ringkasan": "Perburuan airdrop hari ini didominasi oleh testnet gratis fase awal di ekosistem Layer-2 Monad dan program pengumpulan poin efisien pada jaringan Solana serta Base.",
   "items": [
     {
       "nama": "Monad Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Klaim testnet token dari faucet resmi mereka dan lakukan transaksi rutin di dApps ekosistemnya. Selalu gunakan wallet burner khusus testnet untuk menghindari eksploitasi."
+      "langkah": "Klaim token testnet dari faucet resmi Monad lalu lakukan transaksi swap dan add liquidity secara rutin pada dApps ekosistemnya. Gunakan selalu burner wallet khusus testnet dan jangan pernah memasukkan seed phrase di situs mana pun."
     },
     {
-      "nama": "Base Ecosystem Points",
-      "tipe": "Poin",
-      "potensi": "Tinggi",
-      "modal": "Gas Fee Kecil",
-      "langkah": "Interaksi dengan protocol DeFi terverifikasi di jaringan Base yang sedang menjalankan program poin. Pastikan hanya mengakses tautan resmi dari akun Twitter terverifikasi untuk menghindari phishing."
-    },
-    {
-      "nama": "Solana Ecosystem Campaign",
-      "tipe": "Poin",
-      "potensi": "Tinggi",
-      "modal": "Gas Fee Kecil",
-      "langkah": "Gunakan dApps berbasis Solana yang baru merilis program poin ekosistem dan lakukan volume transaksi wajar. Jangan pernah memberikan seed phrase ke website atau bot Telegram yang mencurigakan."
-    },
-    {
-      "nama": "Layer-2 Early Testnet Phase",
+      "nama": "Movement Network (Move-EVM L2)",
       "tipe": "Testnet Gratis",
-      "potensi": "Sedang",
+      "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Lakukan bridge aset testnet ke jaringan L2 baru dan coba fitur utama seperti swap serta staking. Gunakan browser terisolasi dan hindari menghubungkan dompet utama yang berisi dana riil."
+      "langkah": "Hubungkan wallet ke devnet/testnet Movement untuk mencoba fitur bridge dan transaksi swap di dApps ekosistem. Selalu verifikasi tautan resmi dari Discord atau akun X terverifikasi untuk menghindari dApps tiruan (drainer)."
+    },
+    {
+      "nama": "Solana Ecosystem Points (DeFi Protocol)",
+      "tipe": "Poin",
+      "potensi": "Tinggi",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Sediakan likuiditas minimal atau lakukan lending/borrowing pada protokol DeFi Solana yang baru meluncurkan sistem poin. Gunakan fitur revoke approval secara berkala untuk menjaga keamanan wallet Anda dari smart contract berbahaya."
+    },
+    {
+      "nama": "Base L2 Early DeFi Protocol",
+      "tipe": "Retroactive / Poin",
+      "potensi": "Sedang",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Lakukan aktivitas swap berkala dan jalankan misi kampanye resmi ekosistem Base pada platform terpercaya. Waspadai bot phishing di kolom komentar sosial media yang mengarahkan ke situs klaim airdrop palsu."
     }
   ]
 }
