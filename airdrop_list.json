@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795035148.640748,
-  "update_terakhir": "19 Nov 03:52 WIB",
-  "ringkasan": "Fokus ekosistem saat ini bergeser ke infrastruktur L2 dan poin loyalitas di jaringan berkecepatan tinggi seperti Monad dan Base.",
+  "timestamp": 1795045760.28424,
+  "update_terakhir": "19 Nov 06:49 WIB",
+  "ringkasan": "Fokus ekosistem L2 dan blockchain berperforma tinggi seperti Monad dan Base menjadi prioritas utama untuk akumulasi poin dan partisipasi awal.",
   "items": [
     {
       "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti faucet resmi di Discord mereka dan lakukan interaksi swap di dApps yang tersedia di testnet. Pastikan hanya menggunakan link dari akun Twitter resmi untuk menghindari phishing."
+      "langkah": "Ikuti akun resmi di X dan bergabung ke Discord untuk mendapatkan akses faucet testnet. Gunakan wallet burner untuk berinteraksi dengan dApps di ekosistemnya guna menghindari risiko drainer."
     },
     {
       "nama": "Base (Onchain Summer/Poin)",
       "tipe": "Poin",
-      "modal": "Gas Fee Kecil",
       "potensi": "Tinggi",
-      "langkah": "Bridge aset ke jaringan Base dan gunakan dApps ekosistem untuk mengumpulkan poin on-chain. Gunakan wallet burner untuk interaksi dApps baru guna menjaga keamanan aset utama."
+      "modal": "Gas Fee Kecil",
+      "langkah": "Bridge ETH ke jaringan Base dan lakukan transaksi rutin di protokol DeFi seperti Aerodrome. Pastikan hanya berinteraksi dengan dApps yang terverifikasi di situs resmi Base untuk menghindari scam."
     },
     {
-      "nama": "Solana Ecosystem (Jito/Kamino/Drift)",
+      "nama": "Solana Ecosystem (Jito/Drift/Kamino)",
+      "tipe": "Poin",
+      "potensi": "Tinggi",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Lakukan staking atau penyediaan likuiditas pada protokol DeFi berbasis Solana untuk mengumpulkan poin ekosistem. Selalu periksa URL situs web melalui sumber terpercaya untuk mencegah phishing."
+    },
+    {
+      "nama": "Layer-2 DeFi (Early Stage)",
       "tipe": "Retroactive",
-      "modal": "Gas Fee Kecil",
       "potensi": "Sedang",
-      "langkah": "Lakukan staking atau penyediaan likuiditas di protokol DeFi berbasis Solana yang belum memiliki token. Selalu periksa izin (allowance) wallet secara berkala di Revoke.cash."
-    },
-    {
-      "nama": "Layer-2 DeFi (Early Testnet)",
-      "tipe": "Testnet Gratis",
-      "potensi": "Tinggi",
-      "modal": "Gratis ($0)",
-      "langkah": "Daftarkan diri di waitlist proyek L2 baru dan selesaikan misi di platform seperti Galxe atau Layer3. Jangan pernah memasukkan seed phrase di situs web manapun."
+      "modal": "Gas Fee Kecil",
+      "langkah": "Cari proyek DeFi baru di jaringan L2 yang belum memiliki token dan lakukan aktivitas swap atau lending secara berkala. Gunakan wallet terpisah yang tidak menyimpan aset utama demi keamanan dana."
     }
   ]
 }
