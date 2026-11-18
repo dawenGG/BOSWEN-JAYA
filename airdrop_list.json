@@ -1,35 +1,35 @@
 {
-  "timestamp": 1794992374.663784,
-  "update_terakhir": "18 Nov 15:59 WIB",
-  "ringkasan": "Fokus ekosistem Solana, Base, dan Monad sedang mendominasi narasi airdrop dengan sistem poin yang menguntungkan bagi partisipan awal.",
+  "timestamp": 1795003042.159021,
+  "update_terakhir": "18 Nov 18:57 WIB",
+  "ringkasan": "Fokus utama hari ini adalah mengakumulasi poin pada ekosistem Layer-2 dan infrastruktur blockchain baru yang sedang dalam fase testnet awal.",
   "items": [
     {
-      "nama": "Monad Testnet",
+      "nama": "Monad",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti faucet resmi di Discord mereka dan lakukan transaksi di dApps ekosistem yang tersedia. Pastikan hanya berinteraksi dengan link dari Twitter resmi untuk menghindari phising."
+      "langkah": "Ikuti akun Twitter resmi dan pantau pengumuman peluncuran faucet di Discord mereka. Gunakan wallet burner untuk berinteraksi dengan dApps di testnet guna menghindari risiko drainer."
     },
     {
-      "nama": "Base Ecosystem (Onchain Summer)",
+      "nama": "Base Ecosystem (Basenames)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge ETH ke jaringan Base dan gunakan protokol DeFi seperti Aerodrome atau swap di DEX terpercaya. Gunakan wallet burner untuk interaksi dApp baru guna menjaga aset utama tetap aman."
+      "langkah": "Daftarkan nama domain .base melalui situs resmi dan lakukan transaksi rutin di dApps ekosistem Base. Pastikan hanya berinteraksi dengan protokol yang terverifikasi di Base.org untuk menghindari phishing."
     },
     {
-      "nama": "Solana Points Program",
+      "nama": "Solana Ecosystem (Points Program)",
       "tipe": "Poin",
-      "potensi": "Tinggi",
+      "potensi": "Sedang",
       "modal": "Gas Fee Kecil",
-      "langkah": "Lakukan staking SOL atau penyediaan likuiditas di protokol DeFi berbasis Solana yang memiliki sistem poin. Selalu cek izin (revoke) kontrak di wallet setelah berinteraksi dengan protokol baru."
+      "langkah": "Gunakan protokol DeFi yang terintegrasi dengan sistem poin di jaringan Solana seperti Kamino atau Drift. Selalu periksa URL situs melalui sumber resmi untuk mencegah koneksi ke dApp palsu."
     },
     {
-      "nama": "Layer-2 New DeFi Protocols",
+      "nama": "Layer-2 DeFi New Projects",
       "tipe": "Testnet Gratis",
-      "potensi": "Sedang",
+      "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Cari proyek DeFi baru di jaringan L2 yang baru mendapat pendanaan dan jalankan tugas testnet di situs resminya. Jangan pernah memasukkan seed phrase wallet utama ke situs web proyek manapun."
+      "langkah": "Cari proyek DeFi baru di jaringan L2 yang baru mendapat pendanaan dan lakukan swap atau penyediaan likuiditas di testnet. Gunakan wallet terpisah yang tidak berisi aset utama untuk menjaga keamanan dana."
     }
   ]
 }
