@@ -1,8 +1,13 @@
 {
   "saldo_usc": 304.0,
-  "update_terakhir": "18 Nov 20:06 WIB",
-  "analisa_terakhir": "HOLD (Harga 1.09621) — RSI berada di bawah ambang batas 32 untuk kondisi SELL dan EMA20 masih di bawah EMA50.",
-  "posisi": null,
+  "update_terakhir": "18 Nov 21:52 WIB",
+  "analisa_terakhir": "SELL (Harga 1.09723) [Mode Simulasi] — EMA20 berada di bawah EMA50 dan RSI 42.35 berada dalam rentang jenuh jual untuk posisi sell.",
+  "posisi": {
+    "tipe": "SELL",
+    "entry": 1.09723,
+    "sl": 1.09923,
+    "tp": 1.09323
+  },
   "riwayat": [
     {
       "waktu": "18 Nov 15:59 WIB",
