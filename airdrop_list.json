@@ -1,35 +1,35 @@
 {
-  "timestamp": 1794952345.15682,
-  "update_terakhir": "18 Nov 04:52 WIB",
-  "ringkasan": "Fokus hari ini tertuju pada ekosistem Layer-2 dan infrastruktur baru yang sedang agresif memberikan insentif poin sebelum peluncuran token.",
+  "timestamp": 1794964067.881839,
+  "update_terakhir": "18 Nov 08:07 WIB",
+  "ringkasan": "Fokus ekosistem Solana, Base, dan Monad saat ini menjadi primadona dengan potensi reward besar melalui sistem poin dan testnet.",
   "items": [
     {
       "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti akun resmi di X dan pantau peluncuran testnet publik untuk berinteraksi dengan dApps ekosistemnya. Pastikan hanya menggunakan link dari situs resmi monad.xyz untuk menghindari phishing."
+      "langkah": "Daftar di website resmi dan klaim faucet di Discord untuk melakukan transaksi di testnet. Gunakan wallet burner khusus dan jangan pernah hubungkan wallet utama Anda."
     },
     {
       "nama": "Base (Onchain Summer/Poin)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge aset ke jaringan Base dan gunakan dApps populer seperti Aerodrome atau Uniswap untuk meningkatkan volume transaksi. Gunakan wallet burner untuk interaksi dApp baru guna menjaga keamanan aset utama."
+      "langkah": "Bridge ETH ke jaringan Base dan berinteraksi dengan dApps ekosistem seperti Aerodrome atau meminjam di protokol lending. Pastikan selalu cek URL resmi di Twitter/X untuk menghindari phising."
     },
     {
       "nama": "Solana Ecosystem (Points Program)",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Deposit aset ke protokol DeFi yang sedang menjalankan program poin di jaringan Solana seperti Kamino atau Drift. Selalu periksa izin (revoke) kontrak di wallet setelah berinteraksi."
+      "langkah": "Gunakan protokol DeFi di Solana seperti Kamino atau Drift untuk mengumpulkan poin ekosistem. Selalu gunakan fitur 'Revoke' pada token approval yang tidak terpakai untuk keamanan aset."
     },
     {
-      "nama": "Layer-2 DeFi (Early Testnet)",
+      "nama": "Layer-2 DeFi New Projects",
       "tipe": "Testnet Gratis",
       "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Gunakan faucet resmi untuk mendapatkan token testnet dan lakukan swap atau penyediaan likuiditas di platform tersebut. Jangan pernah memasukkan seed phrase di situs web mana pun, cukup hubungkan wallet."
+      "langkah": "Cari proyek baru di platform seperti Galxe atau Layer3 yang sedang menjalankan fase testnet awal. Selalu verifikasi kontrak pintar melalui block explorer sebelum melakukan transaksi."
     }
   ]
 }
