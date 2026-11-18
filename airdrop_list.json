@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795013580.196577,
-  "update_terakhir": "18 Nov 21:53 WIB",
-  "ringkasan": "Fokus perburuan hari ini tertuju pada ekosistem Layer-2 baru dan program poin testnet yang belum memiliki token.",
+  "timestamp": 1795024568.167527,
+  "update_terakhir": "19 Nov 00:56 WIB",
+  "ringkasan": "Fokus perburuan hari ini tertuju pada ekosistem Layer-2 baru dan program poin testnet yang masih berada di fase awal tanpa token.",
   "items": [
     {
       "nama": "Monad Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Klaim faucet token testnet dari fabel resmi dan lakukan interaksi dApps di jaringan Monad. Selalu gunakan wallet burner khusus testnet untuk menghindari eksploitasi."
+      "langkah": "Klaim faucet testnet resmi di Discord mereka dan lakukan beberapa transaksi swap harian. Gunakan wallet burner khusus testnet untuk menghindari risiko drainer."
     },
     {
       "nama": "Base Ecosystem Points",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge sedikit ETH ke jaringan Base dan gunakan protokol DeFi terverifikasi untuk mengumpulkan poin ekosistem. Pastikan hanya mengakses dApps melalui link resmi dari DefiLlama untuk menghindari phishing."
+      "langkah": "Interaksi dengan dApps DeFi terverifikasi di jaringan Base menggunakan ETH secukupnya. Pastikan hanya berinteraksi dengan smart contract yang memiliki audit resmi."
     },
     {
       "nama": "Solana Ecosystem Campaign",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Garap misi poin di protocol-protocol DeFi baru di jaringan Solana yang belum rilis token. Cabut izin (revoke) smart contract yang tidak dikenal secara berkala menggunakan SolRevoke."
+      "langkah": "Garap misi poin pada protokol lending dan staking terkemuka di Solana menggunakan Phantom wallet. Cabut izin (revoke) akses token setelah selesai berinteraksi."
     },
     {
-      "nama": "Layer-2 Alpha Testnet",
+      "nama": "Layer-2 Early Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Bridge aset testnet ke jaringan L2 baru dan lakukan transaksi swap serta penyediaan likuiditas. Jangan pernah memasukkan private key atau seed phrase ke situs web testnet apapun."
+      "langkah": "Lakukan bridging testnet, mint NFT gratis, dan laporkan bug jika ada pada platform L2 baru. Jangan pernah menghubungkan wallet utama yang berisi dana aset riil."
     }
   ]
 }
