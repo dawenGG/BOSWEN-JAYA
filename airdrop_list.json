@@ -1,34 +1,35 @@
 {
-  "timestamp": 1795086029.067603,
-  "update_terakhir": "19 Nov 18:00 WIB",
-  "ringkasan": "Fokus ekosistem saat ini bergeser ke infrastruktur L2 dan poin loyalitas sebagai syarat utama alokasi airdrop masa depan.",
+  "timestamp": 1795099951.079008,
+  "update_terakhir": "19 Nov 21:52 WIB",
+  "ringkasan": "Fokus ekosistem L2 dan infrastruktur baru sedang masif memberikan insentif poin untuk menarik likuiditas sebelum peluncuran token.",
   "items": [
     {
-      "nama": "Monad (Testnet)",
+      "nama": "Monad Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Dapatkan faucet di Discord resmi mereka dan lakukan interaksi swap di DEX yang tersedia di testnet. Pastikan hanya menggunakan wallet burner dan hindari menghubungkan wallet utama."
+      "langkah": "Dapatkan faucet di Discord resmi Monad dan lakukan transaksi di dApps ekosistem mereka. Pastikan hanya berinteraksi dengan link dari Twitter resmi untuk menghindari scam."
     },
     {
-      "nama": "Base (Onchain Summer/Poin)",
-      "tipe": "Poin",
-      "modal": "Gas Fee Kecil",
-      "potensi": "Tinggi",
-      "langkah": "Bridge ETH ke jaringan Base dan gunakan dApps ekosistem seperti Aerodrome untuk menambah volume transaksi. Selalu verifikasi URL situs melalui Twitter resmi Base untuk menghindari phising."
-    },
-    {
-      "nama": "Solana Ecosystem (Jito/Kamino/Drift)",
+      "nama": "Base Ecosystem (Basenames & DeFi)",
       "tipe": "Retroactive",
-      "modal": "Gas Fee Kecil",
       "potensi": "Tinggi",
-      "langkah": "Lakukan staking atau penyediaan likuiditas pada protokol DeFi di Solana untuk mengumpulkan poin ekosistem. Gunakan fitur 'Revoke' untuk memutus akses kontrak yang tidak lagi digunakan demi keamanan aset."
+      "modal": "Gas Fee Kecil",
+      "langkah": "Gunakan bridge resmi ke Base dan lakukan swap di DEX terpercaya seperti Aerodrome. Selalu cek URL situs agar tidak terkena phishing wallet drainer."
     },
     {
-      "nama": "Layer-2 DeFi (Early Stage)",
+      "nama": "Solana Ecosystem Points (Kamino/Drift)",
+      "tipe": "Poin",
+      "potensi": "Sedang",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Deposit aset ke platform lending/trading yang memiliki program poin aktif di Solana. Gunakan burner wallet yang terpisah dari aset utama untuk keamanan."
+    },
+    {
+      "nama": "Layer-2 DeFi Early Testnet",
       "tipe": "Testnet Gratis",
+      "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Cari proyek L2 baru yang sedang dalam fase incentivized testnet dan selesaikan tugas di platform seperti Galxe atau Zealy. Jangan pernah memasukkan seed phrase di situs mana pun, cukup hubungkan wallet saja."
+      "langkah": "Ikuti fase testnet proyek L2 baru dengan melakukan bridge dan interaksi smart contract menggunakan faucet. Jangan pernah memasukkan seed phrase di situs web mana pun."
     }
   ]
 }
