@@ -1,8 +1,13 @@
 {
   "saldo_usc": 302.0,
-  "update_terakhir": "19 Nov 18:00 WIB",
-  "analisa_terakhir": "HOLD (Harga 1.10029) — RSI berada di atas 68 yang mengindikasikan kondisi jenuh beli (overbought) sehingga tidak memenuhi kriteria entry.",
-  "posisi": null,
+  "update_terakhir": "19 Nov 18:56 WIB",
+  "analisa_terakhir": "BUY (Harga 1.09921) [Mode Simulasi] — EMA20 berada di atas EMA50 dan RSI 61.84 berada dalam rentang target 45-68.",
+  "posisi": {
+    "tipe": "BUY",
+    "entry": 1.09921,
+    "sl": 1.09721,
+    "tp": 1.10321
+  },
   "riwayat": [
     {
       "waktu": "19 Nov 18:00 WIB",
