@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795099951.079008,
-  "update_terakhir": "19 Nov 21:52 WIB",
-  "ringkasan": "Fokus ekosistem L2 dan infrastruktur baru sedang masif memberikan insentif poin untuk menarik likuiditas sebelum peluncuran token.",
+  "timestamp": 1795110943.60109,
+  "update_terakhir": "20 Nov 00:55 WIB",
+  "ringkasan": "Perburuan airdrop hari ini sangat potensial didominasi oleh testnet gratis L1/L2 yang belum merilis token serta program poin berbiaya gas fee rendah di ekosistem Solana dan Base.",
   "items": [
     {
       "nama": "Monad Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Dapatkan faucet di Discord resmi Monad dan lakukan transaksi di dApps ekosistem mereka. Pastikan hanya berinteraksi dengan link dari Twitter resmi untuk menghindari scam."
+      "langkah": "Klaim token faucet resmi Monad lalu lakukan transaksi swap dan liquidity provision pada dApps terverifikasi di ekosistemnya. Selalu akses dApps melalui tautan resmi di Discord Monad untuk menghindari situs phising dan drainer."
     },
     {
-      "nama": "Base Ecosystem (Basenames & DeFi)",
-      "tipe": "Retroactive",
-      "potensi": "Tinggi",
-      "modal": "Gas Fee Kecil",
-      "langkah": "Gunakan bridge resmi ke Base dan lakukan swap di DEX terpercaya seperti Aerodrome. Selalu cek URL situs agar tidak terkena phishing wallet drainer."
-    },
-    {
-      "nama": "Solana Ecosystem Points (Kamino/Drift)",
-      "tipe": "Poin",
-      "potensi": "Sedang",
-      "modal": "Gas Fee Kecil",
-      "langkah": "Deposit aset ke platform lending/trading yang memiliki program poin aktif di Solana. Gunakan burner wallet yang terpisah dari aset utama untuk keamanan."
-    },
-    {
-      "nama": "Layer-2 DeFi Early Testnet",
+      "nama": "Movement Network Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti fase testnet proyek L2 baru dengan melakukan bridge dan interaksi smart contract menggunakan faucet. Jangan pernah memasukkan seed phrase di situs web mana pun."
+      "langkah": "Selesaikan misi harian di guild/quest platform Movement dan jajal fitur bridge serta dApps DeFi menggunakan dompet Move. Gunakan dompet burner khusus testnet dan jangan pernah menginput seed phrase dompet utama Anda."
+    },
+    {
+      "nama": "Base Ecosystem Point Campaign",
+      "tipe": "Poin",
+      "potensi": "Tinggi",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Jalankan volume transaksi rutin dan kunci likuiditas mikro pada protokol DeFi bereputasi tinggi di jaringan Base untuk mengakumulasi poin. Pastikan memeriksa izin approval smart contract secara berkala di Revoke.cash untuk mengamankan dana."
+    },
+    {
+      "nama": "Solana Season Points Protocol",
+      "tipe": "Poin",
+      "potensi": "Tinggi",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Staking SOL atau sediakan likuiditas pada protokol LST/DEX Solana generasi baru yang baru membuka program reward poin. Batasi persetujuan transaksi di dompet Phantom dan hindari mengklik tautan airdrop mentag di media sosial."
     }
   ]
 }
