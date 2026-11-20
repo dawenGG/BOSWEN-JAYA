@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795175740.560367,
-  "update_terakhir": "20 Nov 18:55 WIB",
-  "ringkasan": "Fokus ekosistem Solana, Base, dan Monad sedang mendominasi narasi airdrop dengan sistem poin yang sangat menguntungkan bagi partisipan awal.",
+  "timestamp": 1795190183.422781,
+  "update_terakhir": "20 Nov 22:56 WIB",
+  "ringkasan": "Fokus ekosistem Solana, Base, dan Monad sedang mendominasi narasi airdrop dengan mekanisme poin yang sangat aktif.",
   "items": [
     {
       "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti akun resmi di X, pantau pengumuman peluncuran testnet publik, dan berinteraksi dengan dApps di ekosistemnya. Pastikan hanya menggunakan link dari situs resmi monad.xyz untuk menghindari phising."
+      "langkah": "Dapatkan faucet di Discord resmi mereka dan lakukan transaksi di testnet. Pastikan hanya berinteraksi dengan link dari Twitter resmi untuk menghindari phising."
     },
     {
-      "nama": "Base (Onchain Summer)",
+      "nama": "Base (Onchain Summer/Poin)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge aset ke jaringan Base dan lakukan transaksi rutin di dApps seperti Aerodrome atau Uniswap. Gunakan wallet burner untuk berinteraksi dengan protokol baru guna menjaga keamanan aset utama."
+      "langkah": "Gunakan bridge resmi ke Base dan berinteraksi dengan dApps populer di ekosistemnya. Gunakan wallet terpisah (burner wallet) untuk keamanan aset utama."
     },
     {
       "nama": "Solana Ecosystem (Points Program)",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Gunakan protokol DeFi di Solana seperti Kamino atau Drift untuk mengumpulkan poin ekosistem. Selalu periksa izin (revoke) kontrak yang sudah tidak digunakan melalui situs resmi seperti revoke.cash."
+      "langkah": "Stake SOL atau gunakan protokol DeFi di Solana yang memiliki program poin. Selalu cek audit kontrak sebelum melakukan deposit aset."
     },
     {
       "nama": "Layer-2 DeFi (Early Stage)",
       "tipe": "Testnet Gratis",
       "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Cari proyek L2 baru di platform agregator seperti L2Beat, lalu lakukan faucet dan swap di testnet mereka. Jangan pernah memasukkan seed phrase wallet utama ke situs web proyek testnet mana pun."
+      "langkah": "Ikuti fase testnet proyek DeFi baru di L2 untuk mengumpulkan data on-chain. Jangan pernah memasukkan seed phrase wallet utama ke situs web proyek apa pun."
     }
   ]
 }
