@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795319566.341032,
-  "update_terakhir": "22 Nov 10:52 WIB",
+  "timestamp": 1795331066.546405,
+  "update_terakhir": "22 Nov 14:04 WIB",
   "ringkasan": "Fokus hari ini tertuju pada ekosistem Layer-2 dan infrastruktur baru yang sedang agresif memberikan insentif poin sebelum peluncuran token.",
   "items": [
     {
-      "nama": "Monad Testnet",
+      "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Daftar di situs resmi Monad dan ikuti misi di Galxe atau Zealy. Pastikan hanya berinteraksi dengan link resmi di Twitter terverifikasi untuk menghindari phishing."
+      "langkah": "Ikuti akun resmi di X dan pantau peluncuran faucet testnet mereka. Pastikan hanya berinteraksi dengan link dari situs resmi untuk menghindari phishing."
     },
     {
-      "nama": "Base Ecosystem (Bridge & DeFi)",
+      "nama": "Base Ecosystem (Onchain Summer)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge ETH ke Base dan gunakan dApps ekosistem seperti Aerodrome atau Uniswap. Gunakan wallet burner untuk interaksi dApp baru guna menjaga keamanan aset utama."
+      "langkah": "Gunakan jembatan resmi (bridge) ke Base dan lakukan transaksi di dApps ekosistem seperti Aerodrome. Gunakan wallet burner untuk interaksi dApp baru guna menjaga keamanan aset utama."
     },
     {
-      "nama": "Solana Ecosystem Points",
+      "nama": "Solana Ecosystem (Points Program)",
       "tipe": "Poin",
-      "potensi": "Sedang",
+      "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Stake SOL atau gunakan protokol DeFi yang mendukung sistem poin di Solana. Selalu cek audit keamanan protokol sebelum melakukan deposit dana."
+      "langkah": "Lakukan staking atau penyediaan likuiditas di protokol DeFi berbasis Solana yang memiliki program poin. Selalu cek audit protokol di DefiLlama sebelum melakukan deposit dana."
     },
     {
-      "nama": "Layer-2 DeFi Testnet (Early)",
+      "nama": "Layer-2 DeFi New Projects",
       "tipe": "Testnet Gratis",
-      "potensi": "Tinggi",
+      "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Gunakan faucet testnet untuk mendapatkan token uji coba dan lakukan swap atau liquidity provision. Jangan pernah menghubungkan wallet utama yang berisi aset asli ke situs testnet yang mencurigakan."
+      "langkah": "Cari proyek DeFi baru di jaringan L2 yang sedang membuka fase testnet dan lakukan swap atau add liquidity. Gunakan wallet khusus testnet yang tidak berisi dana asli untuk meminimalisir risiko."
     }
   ]
 }
