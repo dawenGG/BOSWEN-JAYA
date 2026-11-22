@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795355764.476061,
-  "update_terakhir": "22 Nov 20:56 WIB",
-  "ringkasan": "Fokus utama hari ini adalah ekosistem Layer-2 dan infrastruktur blockchain baru yang sedang gencar memberikan insentif poin sebelum peluncuran token.",
+  "timestamp": 1795369263.690985,
+  "update_terakhir": "23 Nov 00:41 WIB",
+  "ringkasan": "Fokus ekosistem L2 dan blockchain baru sedang agresif memberikan insentif poin untuk menarik likuiditas sebelum peluncuran token.",
   "items": [
     {
       "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti akun resmi di X dan bergabung ke Discord untuk mendapatkan peran awal. Pantau peluncuran testnet publik dan gunakan faucet resmi untuk mencoba dApps di jaringannya."
+      "langkah": "Dapatkan faucet dari Discord resmi Monad dan lakukan transaksi di testnet mereka. Pastikan hanya berinteraksi dengan link dari situs resmi untuk menghindari phishing."
     },
     {
-      "nama": "Base (Onchain Summer/Poin)",
+      "nama": "Base (Onchain Summer)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge ETH ke jaringan Base dan lakukan transaksi di dApps ekosistem seperti Aerodrome atau Uniswap. Selalu gunakan link resmi dari base.org untuk menghindari situs phishing."
+      "langkah": "Bridge ETH ke jaringan Base dan gunakan dApps ekosistem seperti Aerodrome atau memecoin lokal. Gunakan wallet burner untuk interaksi dApp baru guna menjaga keamanan aset utama."
     },
     {
       "nama": "Solana Ecosystem (Points Program)",
       "tipe": "Poin",
-      "potensi": "Sedang",
+      "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Gunakan protokol DeFi yang terverifikasi di ekosistem Solana seperti Kamino atau Drift untuk mengumpulkan poin. Pastikan wallet hanya terhubung ke situs dengan domain .com atau .io yang terverifikasi."
+      "langkah": "Gunakan protokol DeFi di Solana yang memiliki program poin seperti Kamino atau Drift. Selalu cek izin (revoke) smart contract yang tidak lagi digunakan melalui Revoke.cash."
     },
     {
       "nama": "Layer-2 DeFi (Early Stage)",
       "tipe": "Testnet Gratis",
-      "potensi": "Tinggi",
+      "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Cari proyek DeFi baru di jaringan L2 yang baru saja mendapat pendanaan, lalu lakukan swap dan liquidity provision di testnet. Gunakan wallet khusus burner yang tidak berisi aset utama untuk keamanan."
+      "langkah": "Ikuti kampanye di platform seperti Galxe atau Layer3 yang berkolaborasi dengan proyek L2 baru. Jangan pernah memasukkan seed phrase wallet Anda ke situs web apa pun."
     }
   ]
 }
