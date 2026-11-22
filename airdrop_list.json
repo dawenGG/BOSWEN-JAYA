@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795304218.656827,
-  "update_terakhir": "22 Nov 06:36 WIB",
-  "ringkasan": "Fokus ekosistem Solana, Base, dan Monad sedang mendominasi narasi airdrop dengan sistem poin yang sangat menguntungkan bagi partisipan awal.",
+  "timestamp": 1795319566.341032,
+  "update_terakhir": "22 Nov 10:52 WIB",
+  "ringkasan": "Fokus hari ini tertuju pada ekosistem Layer-2 dan infrastruktur baru yang sedang agresif memberikan insentif poin sebelum peluncuran token.",
   "items": [
     {
-      "nama": "Monad (Testnet)",
+      "nama": "Monad Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti akun Twitter resmi dan pantau pengumuman peluncuran testnet publik untuk berinteraksi dengan dApps mereka. Pastikan hanya berinteraksi melalui tautan resmi di situs web monad.xyz untuk menghindari phishing."
+      "langkah": "Daftar di situs resmi Monad dan ikuti misi di Galxe atau Zealy. Pastikan hanya berinteraksi dengan link resmi di Twitter terverifikasi untuk menghindari phishing."
     },
     {
-      "nama": "Base Ecosystem (Onchain Summer)",
+      "nama": "Base Ecosystem (Bridge & DeFi)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Jembatani ETH ke jaringan Base dan gunakan dApps ekosistem seperti Aerodrome atau memecoin lokal untuk meningkatkan volume transaksi. Gunakan wallet burner untuk berinteraksi dengan protokol baru guna meminimalisir risiko aset utama."
+      "langkah": "Bridge ETH ke Base dan gunakan dApps ekosistem seperti Aerodrome atau Uniswap. Gunakan wallet burner untuk interaksi dApp baru guna menjaga keamanan aset utama."
     },
     {
-      "nama": "Solana Ecosystem (Points Program)",
+      "nama": "Solana Ecosystem Points",
       "tipe": "Poin",
-      "potensi": "Tinggi",
+      "potensi": "Sedang",
       "modal": "Gas Fee Kecil",
-      "langkah": "Gunakan protokol DeFi seperti Kamino atau Drift untuk melakukan staking dan lending guna mengumpulkan poin ekosistem. Selalu verifikasi kontrak pintar melalui platform seperti DefiLlama sebelum melakukan deposit."
+      "langkah": "Stake SOL atau gunakan protokol DeFi yang mendukung sistem poin di Solana. Selalu cek audit keamanan protokol sebelum melakukan deposit dana."
     },
     {
-      "nama": "Layer-2 DeFi (Early Stage)",
+      "nama": "Layer-2 DeFi Testnet (Early)",
       "tipe": "Testnet Gratis",
-      "potensi": "Sedang",
+      "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Cari proyek L2 baru di platform agregator seperti Layer3 atau Galxe yang menawarkan tugas testnet tanpa modal. Hindari menghubungkan wallet utama ke situs yang meminta izin akses aset (token approval) yang mencurigakan."
+      "langkah": "Gunakan faucet testnet untuk mendapatkan token uji coba dan lakukan swap atau liquidity provision. Jangan pernah menghubungkan wallet utama yang berisi aset asli ke situs testnet yang mencurigakan."
     }
   ]
 }
