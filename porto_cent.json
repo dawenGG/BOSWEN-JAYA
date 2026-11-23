@@ -1,14 +1,19 @@
 {
-  "saldo_usc": 298.0,
-  "update_terakhir": "23 Nov 18:05 WIB",
-  "analisa_terakhir": "Tahan posisi BUY (Harga skrg: 1.09603 | SL: 1.09598 | TP: 1.10198)",
+  "saldo_usc": 296.0,
+  "update_terakhir": "23 Nov 20:14 WIB",
+  "analisa_terakhir": "SELL (Harga 1.09362) [Mode Simulasi] — EMA20 berada di bawah EMA50 dan RSI 35.01 berada dalam rentang area jenuh jual untuk konfirmasi posisi jual.",
   "posisi": {
-    "tipe": "BUY",
-    "entry": 1.09798,
-    "sl": 1.09598,
-    "tp": 1.10198
+    "tipe": "SELL",
+    "entry": 1.09362,
+    "sl": 1.09562,
+    "tp": 1.08962
   },
   "riwayat": [
+    {
+      "waktu": "23 Nov 20:14 WIB",
+      "status": "STOP LOSS -2.0 USC",
+      "saldo": 296.0
+    },
     {
       "waktu": "23 Nov 14:30 WIB",
       "status": "STOP LOSS -2.0 USC",
