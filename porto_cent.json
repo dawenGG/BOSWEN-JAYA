@@ -1,14 +1,14 @@
 {
-  "saldo_usc": 300.0,
-  "update_terakhir": "23 Nov 12:18 WIB",
-  "analisa_terakhir": "Tahan posisi SELL (Harga skrg: 1.09809 | SL: 1.09902 | TP: 1.09302)",
-  "posisi": {
-    "tipe": "SELL",
-    "entry": 1.09702,
-    "sl": 1.09902,
-    "tp": 1.09302
-  },
+  "saldo_usc": 298.0,
+  "update_terakhir": "23 Nov 14:30 WIB",
+  "analisa_terakhir": "HOLD (Harga 1.09988) — RSI berada di level jenuh beli (92.46) yang melampaui batas aturan strategi untuk melakukan entry.",
+  "posisi": null,
   "riwayat": [
+    {
+      "waktu": "23 Nov 14:30 WIB",
+      "status": "STOP LOSS -2.0 USC",
+      "saldo": 298.0
+    },
     {
       "waktu": "20 Nov 03:00 WIB",
       "status": "STOP LOSS -2.0 USC",
