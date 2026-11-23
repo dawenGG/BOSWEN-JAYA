@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795390848.833883,
-  "update_terakhir": "23 Nov 06:40 WIB",
-  "ringkasan": "Fokus utama hari ini adalah memanfaatkan testnet EVM performa tinggi gratis seperti Monad dan Movement, serta mengumpulkan poin DeFi berbiaya murah di ekosistem Base dan Solana.",
+  "timestamp": 1795406521.239071,
+  "update_terakhir": "23 Nov 11:02 WIB",
+  "ringkasan": "Fokus ekosistem Solana, Base, dan Monad sedang mendominasi narasi airdrop dengan sistem poin yang sangat menguntungkan bagi partisipan awal.",
   "items": [
     {
       "nama": "Monad Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Dapatkan token testnet melalui faucet resmi Monad lalu lakukan transaksi rutin seperti swap dan staking di dApp ekosistemnya. Gunakan dompet khusus testnet dan pastikan hanya mengakses tautan dari akun Twitter/X terverifikasi."
+      "langkah": "Dapatkan faucet di Discord resmi mereka dan lakukan transaksi di dApps ekosistem Monad. Pastikan hanya berinteraksi dengan link dari Twitter resmi untuk menghindari phising."
     },
     {
-      "nama": "Movement Labs Testnet",
+      "nama": "Base Ecosystem (Onchain Summer)",
+      "tipe": "Retroactive",
+      "potensi": "Tinggi",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Bridge ETH ke jaringan Base dan gunakan dApps populer seperti Aerodrome atau Uniswap. Gunakan wallet burner untuk berinteraksi dengan proyek baru guna menjaga keamanan aset utama."
+    },
+    {
+      "nama": "Solana Ecosystem Points (Kamino/Drift)",
+      "tipe": "Poin",
+      "potensi": "Tinggi",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Deposit aset atau lakukan trading di platform DeFi berbasis Solana yang memiliki sistem poin. Selalu periksa URL situs secara teliti dan hindari memberikan akses 'approve' pada kontrak yang mencurigakan."
+    },
+    {
+      "nama": "Layer-2 DeFi New Protocols",
       "tipe": "Testnet Gratis",
-      "potensi": "Tinggi",
-      "modal": "Gratis ($0)",
-      "langkah": "Sambungkan dompet Aptos/EVM ke testnet Movement, klaim faucet, dan selesaikan tugas interaktif pada platform Zealy atau Galxe. Waspadai phishing dengan menolak persetujuan transaksi yang meminta akses penuh ke saldo utama."
-    },
-    {
-      "nama": "Base Ecosystem Points (Base DeFi)",
-      "tipe": "Poin",
-      "potensi": "Tinggi",
-      "modal": "Gas Fee Kecil",
-      "langkah": "Sediakan likuiditas minimal atau lakukan transaksi lending/borrowing pada dApp DeFi teratas di jaringan Base untuk memupuk poin ekosistem. Putuskan sambungan dompet (disconnect) setelah selesai bertransaksi demi keamanan."
-    },
-    {
-      "nama": "Solana LST & DeFi Points",
-      "tipe": "Poin",
       "potensi": "Sedang",
-      "modal": "Gas Fee Kecil",
-      "langkah": "Lakukan liquid staking SOL atau supply aset pada protokol lending Solana yang belum ber-token untuk mengumpulkan poin harian. Hindari mengeklik tautan iklan sponsor Google dan gunakan extension pelindung dompet seperti Pocket Universe."
+      "modal": "Gratis ($0)",
+      "langkah": "Ikuti kampanye di Galxe atau Layer3 yang terafiliasi dengan proyek L2 baru untuk mendapatkan poin. Jangan pernah memasukkan seed phrase wallet utama Anda ke situs web proyek testnet mana pun."
     }
   ]
 }
