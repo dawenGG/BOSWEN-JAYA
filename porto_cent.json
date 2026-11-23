@@ -1,7 +1,7 @@
 {
   "saldo_usc": 300.0,
-  "update_terakhir": "24 Nov 00:02 WIB",
-  "analisa_terakhir": "HOLD (Harga 1.08857) — Meskipun EMA20 berada di bawah EMA50, nilai RSI14 sebesar 12.84 berada di luar rentang syarat SELL yang ditentukan.",
+  "update_terakhir": "24 Nov 00:59 WIB",
+  "analisa_terakhir": "HOLD (Harga 1.08803) — Keputusan HOLD karena meskipun EMA20 berada di bawah EMA50, nilai RSI14 sebesar 12.31 berada di luar rentang parameter konfirmasi SELL.",
   "posisi": null,
   "riwayat": [
     {

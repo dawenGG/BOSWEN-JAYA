@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795446003.25563,
-  "update_terakhir": "23 Nov 22:00 WIB",
-  "ringkasan": "Fokus perburuan hari ini tertuju pada ekosistem testnet zero-cost seperti Monad dan L2 baru, serta pengumpulan poin efisien di jaringan Base dan Solana.",
+  "timestamp": 1795456766.267976,
+  "update_terakhir": "24 Nov 00:59 WIB",
+  "ringkasan": "Perburuan airdrop saat ini sangat potensial pada fase awal testnet gratis L2 berkecepatan tinggi seperti Monad dan Movement, dipadu dengan pengumpulan poin di ekosistem Base dan Solana.",
   "items": [
     {
       "nama": "Monad Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Klaim token faucet di situs resmi Monad lalu lakukan swap serta interaksi dApp secara rutin. Pastikan hanya menggunakan tautan resmi dari Discord terverifikasi untuk menghindari phishing."
+      "langkah": "Klaim token faucet resmi Monad dan lakukan transaksi swap serta liquidity provision secara rutin di dApps ekosistemnya. Pastikan hanya menggunakan link dApp resmi dari Discord terverifikasi untuk menghindari situs drainer."
     },
     {
-      "nama": "Movement Network",
+      "nama": "Movement Labs Testnet",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Selesaikan misi di portal testnet Movement dan interaksi dengan dApps Move-EVM yang tersedia. Gunakan burner wallet khusus testnet untuk keamanan aset utama Anda."
+      "langkah": "Selesaikan quest interaktif di platform MoveDrop serta uji coba transaksi bridge dan DEX di jaringan testnet. Gunakan selalu burner wallet khusus testnet dan jangan pernah mencampur aset utama Anda."
     },
     {
-      "nama": "Solana Ecosystem (Sanctum / Meteora)",
+      "nama": "Base Ecosystem Points",
+      "tipe": "Retroactive / Poin",
+      "potensi": "Tinggi",
+      "modal": "Gas Fee Kecil",
+      "langkah": "Lakukan transaksi rutin dan selesaikan mint NFT quest pada protokol DeFi potensial di jaringan Base yang belum memiliki token. Waspadai signature request mencurigakan dan selalu periksa izin approval kontrak pintar."
+    },
+    {
+      "nama": "Solana LST & DeFi Points (Sanctum)",
       "tipe": "Poin",
       "potensi": "Tinggi",
-      "modal": "Modal Kecil (Gas Fee SOL)",
-      "langkah": "Lakukan staking LST atau sediakan likuiditas mikro untuk akumulasi poin ekosistem Solana secara pasif. Selalu abaikan pesan pribadi (DM) dan link 'claim' palsu di media sosial."
-    },
-    {
-      "nama": "Base Ecosystem Quests",
-      "tipe": "Retroactive / Poin",
-      "potensi": "Sedang",
-      "modal": "Gas Fee Kecil (<$1)",
-      "langkah": "Rutin bertransaksi di DEX terkemuka Base dan selesaikan badge quest resmi ekosistem Base. Periksa izin smart contract secara berkala dan revoke akses yang tidak dikenal."
+      "modal": "Gas Fee Kecil",
+      "langkah": "Hold atau deposit SOL ke dalam Liquid Staking Tokens (LST) di platform Sanctum untuk mengumpulkan multiplier poin mingguan. Selalu verifikasi domain situs dApp Solana dan jangan pernah memasukkan seed phrase wallet Anda."
     }
   ]
 }
