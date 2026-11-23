@@ -1,8 +1,13 @@
 {
   "saldo_usc": 298.0,
-  "update_terakhir": "23 Nov 14:30 WIB",
-  "analisa_terakhir": "HOLD (Harga 1.09988) — RSI berada di level jenuh beli (92.46) yang melampaui batas aturan strategi untuk melakukan entry.",
-  "posisi": null,
+  "update_terakhir": "23 Nov 16:22 WIB",
+  "analisa_terakhir": "BUY (Harga 1.09798) [Mode Simulasi] — EMA20 berada di atas EMA50 dan nilai RSI14 sebesar 67.91 memenuhi syarat rentang 45-68.",
+  "posisi": {
+    "tipe": "BUY",
+    "entry": 1.09798,
+    "sl": 1.09598,
+    "tp": 1.10198
+  },
   "riwayat": [
     {
       "waktu": "23 Nov 14:30 WIB",
