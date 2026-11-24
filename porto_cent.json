@@ -1,7 +1,7 @@
 {
   "saldo_usc": 298.0,
-  "update_terakhir": "24 Nov 18:57 WIB",
-  "analisa_terakhir": "HOLD (Harga 1.09526) — Meskipun EMA20 di bawah EMA50, RSI14 sangat overbought pada 84.92 sehingga berada di luar rentang parameter strategi.",
+  "update_terakhir": "24 Nov 20:13 WIB",
+  "analisa_terakhir": "HOLD (Harga 1.09627) — Nilai RSI14 sebesar 85.84 berada di luar rentang kriteria untuk eksekusi posisi BUY maupun SELL.",
   "posisi": null,
   "riwayat": [
     {
