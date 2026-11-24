@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795536363.98035,
-  "update_terakhir": "24 Nov 23:06 WIB",
-  "ringkasan": "Perburuan airdrop hari ini didominasi oleh peluang testnet gratis L1/L2 berpendanaan besar serta akumulasi poin efisien di ekosistem Solana dan Base.",
+  "timestamp": 1795550432.403513,
+  "update_terakhir": "25 Nov 03:00 WIB",
+  "ringkasan": "Fokus utama hari ini adalah akumulasi poin pada ekosistem Layer-2 dan partisipasi testnet awal untuk mengamankan alokasi token masa depan.",
   "items": [
     {
-      "nama": "Monad Testnet",
+      "nama": "Monad",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Klaim token testnet melalui faucet resmi dan lakukan transaksi swap serta liquidity provision secara rutin di DEX ekosistem Monad. Gunakan selalu burner wallet khusus testnet dan abaikan pesan DM yang menawarkan bantuan klaim token."
+      "langkah": "Ikuti akun resmi di X dan bergabung ke Discord untuk mendapatkan peran awal. Pantau peluncuran testnet publik dan selalu gunakan wallet burner khusus untuk berinteraksi dengan dApps mereka."
     },
     {
-      "nama": "Movement Network Testnet",
-      "tipe": "Testnet Gratis",
-      "potensi": "Tinggi",
-      "modal": "Gratis ($0)",
-      "langkah": "Hubungkan dompet Web3 ke portal testnet resmi Movement untuk mencoba fitur bridge, minting NFT, dan interaksi dApp berbasis Move. Jangan pernah memasukkan seed phrase Anda di situs apa pun yang mengklaim sebagai 'airdrop checker'."
-    },
-    {
-      "nama": "Base Ecosystem Quests",
-      "tipe": "Retroactive / Poin",
+      "nama": "Base Ecosystem (Onchain Summer)",
+      "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Selesaikan misi harian on-chain di jaringan Base melalui platform resmi seperti Layer3 atau Galxe untuk mengumpulkan poin ekosistem. Selalu periksa izin smart contract secara berkala dan lakukan revoke pada dApp yang tidak lagi digunakan."
+      "langkah": "Lakukan bridge aset ke jaringan Base dan berinteraksi dengan dApps terverifikasi di Base. Pastikan hanya menghubungkan wallet ke situs resmi yang terdaftar di portal Base.org untuk menghindari phishing."
     },
     {
-      "nama": "Solana DeFi Points Strategy",
+      "nama": "Solana Ecosystem Points",
       "tipe": "Poin",
-      "potensi": "Tinggi",
+      "potensi": "Sedang",
       "modal": "Gas Fee Kecil",
-      "langkah": "Sediakan likuiditas mikro atau lakukan staking SOL pada protokol DeFi Solana yang belum meluncurkan token guna mengamankan alokasi poin harian. Waspadai bot phishing di komentar Twitter/X yang membagikan tautan klaim airdrop palsu."
+      "langkah": "Gunakan protokol DeFi di Solana yang memiliki sistem poin seperti Kamino atau Drift. Selalu verifikasi smart contract melalui platform keamanan seperti DefiLlama sebelum melakukan deposit."
+    },
+    {
+      "nama": "Layer-2 DeFi New Projects",
+      "tipe": "Testnet Gratis",
+      "potensi": "Tinggi",
+      "modal": "Gratis ($0)",
+      "langkah": "Cari proyek DeFi baru di jaringan L2 yang baru saja mendapatkan pendanaan dan jalankan misi testnet mereka. Jangan pernah memasukkan seed phrase wallet utama Anda ke situs web proyek testnet manapun."
     }
   ]
 }
