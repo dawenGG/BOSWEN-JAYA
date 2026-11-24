@@ -1,7 +1,7 @@
 {
   "saldo_usc": 298.0,
-  "update_terakhir": "24 Nov 17:08 WIB",
-  "analisa_terakhir": "HOLD (Harga 1.09283) — RSI berada di level jenuh beli (76.38) yang melampaui batas aturan untuk melakukan entri BUY.",
+  "update_terakhir": "24 Nov 18:57 WIB",
+  "analisa_terakhir": "HOLD (Harga 1.09526) — Meskipun EMA20 di bawah EMA50, RSI14 sangat overbought pada 84.92 sehingga berada di luar rentang parameter strategi.",
   "posisi": null,
   "riwayat": [
     {
