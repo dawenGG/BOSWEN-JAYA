@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795496617.111237,
-  "update_terakhir": "24 Nov 12:03 WIB",
-  "ringkasan": "Fokus ekosistem L2 dan Solana sedang sangat aktif dengan sistem poin sebagai basis alokasi airdrop di masa depan.",
+  "timestamp": 1795510842.052186,
+  "update_terakhir": "24 Nov 16:00 WIB",
+  "ringkasan": "Fokus ekosistem L2 dan Solana sedang sangat agresif dengan sistem poin sebagai metrik utama alokasi airdrop.",
   "items": [
     {
       "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Daftar di website resmi dan ikuti misi di Discord atau Zealy. Pastikan hanya akses link dari kanal resmi untuk menghindari phising."
+      "langkah": "Daftar di website resmi Monad dan ikuti aktivitas di Discord untuk mendapatkan role awal. Pastikan hanya berinteraksi dengan link dari kanal resmi untuk menghindari phising."
     },
     {
-      "nama": "Base (Onchain Summer)",
+      "nama": "Base (Onchain Summer/Bridge)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Lakukan transaksi rutin di dApps ekosistem Base seperti bridge atau swap. Gunakan wallet burner untuk interaksi dApp baru guna menjaga keamanan aset utama."
+      "langkah": "Bridge aset ke jaringan Base dan gunakan dApps ekosistem seperti Aerodrome atau Uniswap. Gunakan wallet burner untuk interaksi dApp guna mengamankan aset utama Anda."
     },
     {
-      "nama": "Solana Ecosystem (Points Program)",
+      "nama": "Solana Ecosystem (Jito/Kamino/Drift)",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Gunakan protokol DeFi di Solana yang memiliki program poin seperti Kamino atau Drift. Selalu cek izin akses (revoke) kontrak setelah berinteraksi."
+      "langkah": "Lakukan staking atau penyediaan likuiditas di protokol DeFi berbasis Solana yang memiliki sistem poin. Selalu periksa izin kontrak (revoke) secara berkala di platform seperti Revoke.cash."
     },
     {
-      "nama": "Layer-2 DeFi New Projects",
-      "tipe": "Testnet Gratis",
+      "nama": "Layer-2 DeFi (Zora/Scroll)",
+      "tipe": "Retroactive",
       "potensi": "Sedang",
-      "modal": "Gratis ($0)",
-      "langkah": "Cari proyek L2 baru di platform agregator seperti L2Beat dan ikuti testnet-nya. Jangan pernah masukkan seed phrase wallet utama ke situs testnet apapun."
+      "modal": "Gas Fee Kecil",
+      "langkah": "Lakukan transaksi rutin seperti swap atau mint NFT di jaringan tersebut untuk membangun on-chain footprint. Hindari menghubungkan wallet ke situs yang tidak dikenal atau menjanjikan keuntungan instan."
     }
   ]
 }
