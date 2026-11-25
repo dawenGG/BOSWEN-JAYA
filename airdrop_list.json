@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795575285.560959,
-  "update_terakhir": "25 Nov 09:54 WIB",
-  "ringkasan": "Fokus ekosistem L2 dan Solana sedang sangat aktif dengan sistem poin sebagai metrik utama alokasi airdrop masa depan.",
+  "timestamp": 1795590982.110715,
+  "update_terakhir": "25 Nov 14:16 WIB",
+  "ringkasan": "Fokus ekosistem L2 dan Solana sedang sangat aktif dengan sistem poin yang menjadi meta utama untuk alokasi airdrop di masa depan.",
   "items": [
     {
       "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Dapatkan faucet di Discord resmi mereka dan lakukan transaksi di dApps yang tersedia di testnet. Pastikan hanya berinteraksi dengan link dari kanal resmi untuk menghindari phishing."
+      "langkah": "Klaim faucet di Discord resmi mereka dan lakukan transaksi di dApps yang tersedia di testnet. Pastikan hanya berinteraksi dengan link dari Twitter resmi untuk menghindari phising."
     },
     {
       "nama": "Base (Onchain Summer/Bridge)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Gunakan official bridge Base dan lakukan swap atau mint NFT di jaringan Base untuk meningkatkan on-chain activity. Gunakan wallet burner untuk meminimalisir risiko jika berinteraksi dengan protokol baru."
+      "langkah": "Bridge aset ke jaringan Base dan gunakan dApps ekosistem seperti Aerodrome atau Uniswap. Selalu cek URL situs di Base.org untuk menghindari scammer."
     },
     {
       "nama": "Solana Ecosystem (Points Program)",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Lakukan staking SOL atau penyediaan likuiditas di protokol DeFi berbasis Solana yang memiliki program poin. Selalu cek audit protokol di platform seperti DefiLlama sebelum mendepositkan aset."
+      "langkah": "Gunakan protokol DeFi di Solana seperti Kamino atau Drift untuk mengumpulkan poin ekosistem. Gunakan wallet burner (dompet khusus) yang tidak berisi aset utama untuk keamanan ekstra."
     },
     {
-      "nama": "Layer-2 DeFi (Early Stage)",
+      "nama": "Layer-2 DeFi New Projects",
       "tipe": "Testnet Gratis",
       "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Daftar ke waitlist dan selesaikan misi di platform testnet untuk mendapatkan peran awal (early role). Jangan pernah memasukkan seed phrase wallet utama Anda ke situs web proyek yang belum terverifikasi."
+      "langkah": "Cari proyek DeFi baru di jaringan L2 yang baru mendapat pendanaan, lalu coba fitur swap dan liquidity provision. Jangan pernah memasukkan seed phrase wallet utama ke situs web proyek baru."
     }
   ]
 }
