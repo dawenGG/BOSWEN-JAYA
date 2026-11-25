@@ -1,8 +1,13 @@
 {
   "saldo_usc": 296.0,
-  "update_terakhir": "25 Nov 22:02 WIB",
-  "analisa_terakhir": "HOLD (Harga 1.09364) — EMA20 berada di bawah EMA50 namun indikator RSI14 sebesar 31.76 berada di bawah rentang 32-55 untuk sinyal SELL.",
-  "posisi": null,
+  "update_terakhir": "25 Nov 23:07 WIB",
+  "analisa_terakhir": "BUY (Harga 1.09489) [Mode Simulasi] — EMA20 berada di atas EMA50 dan nilai RSI14 sebesar 47.66 masuk dalam rentang 45-68.",
+  "posisi": {
+    "tipe": "BUY",
+    "entry": 1.09489,
+    "sl": 1.09289,
+    "tp": 1.09889
+  },
   "riwayat": [
     {
       "waktu": "25 Nov 18:59 WIB",
