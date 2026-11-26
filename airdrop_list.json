@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795669537.581244,
-  "update_terakhir": "26 Nov 12:05 WIB",
-  "ringkasan": "Fokus pada ekosistem L2 dan infrastruktur baru yang sedang agresif memberikan insentif poin sebelum peluncuran token.",
+  "timestamp": 1795683732.782665,
+  "update_terakhir": "26 Nov 16:02 WIB",
+  "ringkasan": "Fokus ekosistem saat ini bergeser ke infrastruktur L2 dan poin loyalitas di jaringan Solana serta Monad untuk memaksimalkan alokasi airdrop.",
   "items": [
     {
       "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti akun resmi di X, pantau pengumuman peluncuran testnet publik, dan gunakan faucet resmi. Hindari link pihak ketiga yang meminta seed phrase untuk menghindari scam."
+      "langkah": "Daftar di website resmi dan ikuti misi di Discord atau Zealy untuk mendapatkan role awal. Pastikan hanya berinteraksi dengan link dari akun Twitter resmi untuk menghindari phising."
     },
     {
-      "nama": "Base (Onchain Summer/Bridge)",
+      "nama": "Base Ecosystem (Onchain Summer)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge aset ke jaringan Base dan berinteraksi dengan dApps ekosistem seperti Uniswap atau Aerodrome. Pastikan selalu cek URL resmi di base.org untuk mencegah phishing."
+      "langkah": "Bridge aset ke Base dan gunakan dApps ekosistem seperti Aerodrome atau Uniswap secara berkala. Gunakan wallet burner untuk interaksi dApps baru guna menjaga keamanan aset utama."
     },
     {
-      "nama": "Solana Ecosystem (Jito/Kamino Points)",
+      "nama": "Solana Ecosystem (Points Program)",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Lakukan staking atau penyediaan likuiditas di protokol DeFi berbasis Solana yang memiliki sistem poin. Gunakan wallet burner untuk berinteraksi dengan protokol baru guna menjaga keamanan aset utama."
+      "langkah": "Gunakan platform DeFi seperti Kamino atau Drift untuk mengumpulkan poin loyalitas. Selalu cek izin (revoke) smart contract yang telah disetujui melalui Revoke.cash secara berkala."
     },
     {
-      "nama": "Layer-2 DeFi (New Protocols)",
+      "nama": "Layer-2 DeFi (Early Stage)",
       "tipe": "Testnet Gratis",
       "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Cari proyek DeFi baru di jaringan L2 yang sedang membuka akses awal, lalu lakukan swap dan add liquidity. Selalu verifikasi kontrak pintar melalui platform seperti DeFiLlama sebelum menghubungkan wallet."
+      "langkah": "Cari proyek L2 baru di platform agregator seperti L2Beat, lalu lakukan faucet dan swap di testnet mereka. Jangan pernah memasukkan seed phrase wallet utama ke situs web proyek yang belum terverifikasi."
     }
   ]
 }
