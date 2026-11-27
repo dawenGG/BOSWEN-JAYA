@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795812893.61943,
-  "update_terakhir": "28 Nov 03:54 WIB",
-  "ringkasan": "Ekosistem Layer-2 dan Solana sedang agresif memberikan insentif poin bagi pengguna awal sebelum peluncuran token.",
+  "timestamp": 1795823515.682487,
+  "update_terakhir": "28 Nov 06:51 WIB",
+  "ringkasan": "Fokus ekosistem Solana, Base, dan Monad saat ini menawarkan peluang airdrop dengan partisipasi aktif berbasis poin dan testnet.",
   "items": [
     {
       "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Klaim faucet di Discord resmi Monad dan lakukan transaksi di testnet mereka. Pastikan hanya berinteraksi dengan link dari situs resmi untuk menghindari phishing."
+      "langkah": "Ikuti faucet di Discord resmi mereka dan lakukan transaksi di dApps yang berjalan di testnet. Pastikan hanya berinteraksi dengan link dari kanal resmi untuk menghindari phising."
     },
     {
-      "nama": "Base (Onchain Summer/Poin)",
+      "nama": "Base (Onchain Summer/Bridge)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge aset ke jaringan Base dan gunakan dApps ekosistem seperti Aerodrome atau Uniswap. Gunakan wallet burner (terpisah) untuk keamanan aset utama Anda."
+      "langkah": "Bridge aset ke jaringan Base dan gunakan dApps ekosistem seperti Aerodrome atau Uniswap. Gunakan wallet khusus burner untuk meminimalisir risiko jika terjadi interaksi smart contract berbahaya."
     },
     {
-      "nama": "Solana Ecosystem (Jito/Kamino/Drift)",
+      "nama": "Solana Ecosystem (Points Program)",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Lakukan staking atau penyediaan likuiditas di protokol DeFi berbasis Solana yang memiliki sistem poin. Selalu cek URL situs di Twitter resmi proyek untuk menghindari scam."
+      "langkah": "Gunakan protokol DeFi di Solana yang memiliki program poin seperti Kamino atau Drift. Selalu periksa izin (permissions) wallet sebelum menghubungkan ke situs baru."
     },
     {
-      "nama": "Layer-2 DeFi New Projects",
+      "nama": "Layer-2 DeFi (Early Stage)",
       "tipe": "Testnet Gratis",
       "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Ikuti kampanye di platform seperti Galxe atau Layer3 yang terafiliasi dengan proyek L2 baru. Jangan pernah memasukkan seed phrase wallet Anda di situs mana pun."
+      "langkah": "Daftar ke whitelist atau akses testnet proyek Layer-2 baru yang baru saja mendapatkan pendanaan. Gunakan email khusus dan jangan pernah memasukkan seed phrase di situs manapun."
     }
   ]
 }
