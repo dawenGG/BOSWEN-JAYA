@@ -1,35 +1,35 @@
 {
-  "timestamp": 1795845393.936086,
-  "update_terakhir": "28 Nov 12:56 WIB",
-  "ringkasan": "Fokus ekosistem L2 dan Solana sedang sangat aktif dengan sistem poin sebagai penentu alokasi airdrop masa depan.",
+  "timestamp": 1795859524.320538,
+  "update_terakhir": "28 Nov 16:52 WIB",
+  "ringkasan": "Fokus ekosistem L2 dan Solana sedang sangat aktif dengan sistem poin sebagai metrik utama alokasi airdrop masa depan.",
   "items": [
     {
       "nama": "Monad (Testnet)",
       "tipe": "Testnet Gratis",
       "potensi": "Tinggi",
       "modal": "Gratis ($0)",
-      "langkah": "Daftar melalui situs resmi dan ikuti faucet di Discord untuk klaim testnet token. Pastikan hanya berinteraksi dengan link resmi di Twitter/X mereka untuk menghindari phising."
+      "langkah": "Dapatkan faucet di Discord resmi mereka dan lakukan transaksi di dApps yang tersedia di testnet. Pastikan hanya berinteraksi dengan link dari kanal resmi untuk menghindari phishing."
     },
     {
-      "nama": "Base (Onchain Summer)",
+      "nama": "Base (Onchain Summer/Bridge)",
       "tipe": "Retroactive",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Bridge aset ke jaringan Base dan lakukan transaksi di dApps ekosistem seperti Aerodrome atau Uniswap. Gunakan wallet burner untuk berinteraksi dengan protokol baru guna menjaga keamanan aset utama."
+      "langkah": "Bridge aset ke jaringan Base dan gunakan dApps ekosistem seperti Aerodrome atau Uniswap. Gunakan wallet burner untuk meminimalisir risiko jika berinteraksi dengan protokol baru."
     },
     {
       "nama": "Solana Ecosystem (Points Program)",
       "tipe": "Poin",
       "potensi": "Tinggi",
       "modal": "Gas Fee Kecil",
-      "langkah": "Gunakan protokol DeFi di Solana seperti Kamino atau Drift untuk mengumpulkan poin loyalitas. Selalu cek izin (permissions) wallet sebelum menghubungkan ke dApps yang kurang dikenal."
+      "langkah": "Gunakan protokol DeFi di Solana yang memiliki program poin seperti Kamino atau Drift. Selalu cek URL situs di Twitter resmi proyek untuk menghindari scammer yang meniru tampilan web."
     },
     {
-      "nama": "Layer-2 DeFi (Early Stage)",
+      "nama": "Layer-2 DeFi New Protocols",
       "tipe": "Testnet Gratis",
       "potensi": "Sedang",
       "modal": "Gratis ($0)",
-      "langkah": "Cari proyek L2 baru di platform seperti Galxe atau Layer3 yang menyediakan misi testnet. Jangan pernah memasukkan seed phrase di situs mana pun dan gunakan wallet khusus testnet yang terpisah."
+      "langkah": "Cari proyek L2 baru di platform agregator seperti L2Beat, lalu ikuti panduan testnet mereka. Jangan pernah memasukkan seed phrase wallet utama Anda ke situs testnet manapun."
     }
   ]
 }
