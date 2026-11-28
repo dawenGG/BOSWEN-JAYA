@@ -1,14 +1,14 @@
 {
-  "saldo_usc": 296.0,
-  "update_terakhir": "28 Nov 18:48 WIB",
-  "analisa_terakhir": "Tahan posisi BUY (Harga skrg: 1.09308 | SL: 1.09289 | TP: 1.09889)",
-  "posisi": {
-    "tipe": "BUY",
-    "entry": 1.09489,
-    "sl": 1.09289,
-    "tp": 1.09889
-  },
+  "saldo_usc": 294.0,
+  "update_terakhir": "28 Nov 19:56 WIB",
+  "analisa_terakhir": "HOLD (Harga 1.09282) — Meskipun EMA20 berada di bawah EMA50, nilai RSI sebesar 27.27 berada di luar rentang syarat SELL yaitu 32-55.",
+  "posisi": null,
   "riwayat": [
+    {
+      "waktu": "28 Nov 19:56 WIB",
+      "status": "STOP LOSS -2.0 USC",
+      "saldo": 294.0
+    },
     {
       "waktu": "25 Nov 18:59 WIB",
       "status": "STOP LOSS -2.0 USC",
